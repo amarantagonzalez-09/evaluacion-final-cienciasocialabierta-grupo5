@@ -1,0 +1,179 @@
+
+
+
+```{r cargar-librerias-y-bbdd}
+#| warning: false
+#| echo: false
+#| message: false
+
+#cargar librerías
+pacman::p_load(tidyverse, # Manipulacion datos
+               ggplot2, # Gráficos
+               sjPlot, # Tablas y gráficos
+               dplyr,
+               kable,
+               kableExtra,
+               haven,
+               tidyr,
+               knitr,
+               summarytools,
+               crosstable, 
+               table1) 
+               
+
+options(scipen = 999) # para desactivar notacion cientifica
+
+rm(list = ls()) # para limpiar el entorno de trabajo
+
+
+```
+
+
+```{r Cargar-y-procesar-bbdd}
+#| warning: false
+#| echo: false
+#| message: false
+
+#Cargar bbdd
+
+data <- read_dta("input/Latinobarometro_2024_Chile_Stata_esp_v1.dta")
+
+#Seleccionar variables
+ltb_subset <- data %>%
+  select(EDAD, SEXO, S2, P49ST.A, P49ST.B, P49ST.C, P50ST.A, P50ST.B,
+         P50ST.C, P51ST, P52N, P53N, P54N, P55ST)
+
+summary (ltb_subset)
+
+```
+
+```{r Recodificar-variables}
+#| warning: false
+#| echo: false
+#| message: false
+
+
+#----------------------------------------------------------------------
+# Recodificación e inversión (valores más altos = mayor percepción de delincuencia)
+#----------------------------------------------------------------------
+
+# variable S2
+data_procesada <- ltb_subset %>%
+  mutate(
+  clase_subjetiva = case_when(
+      S2 == 1 ~ 5,
+      S2 == 2 ~ 4,
+      S2 == 3 ~ 3,
+      S2 == 4 ~ 2,
+      S2 == 5 ~ 1,
+      TRUE ~ NA_real_ 
+    ),
+  # Variable categórica dummy 
+    clase_grupos = case_when(
+      clase_subjetiva %in% c(1, 2) ~ "Clase Baja",
+      clase_subjetiva == 3         ~ "Clase Media",
+      clase_subjetiva %in% c(4, 5) ~ "Clase Alta",
+      TRUE ~ NA_character_
+    ),
+# Variables P49St
+    p49a_crimen = case_when(
+      P49ST.A == 1 ~ 5,
+      P49ST.A == 2 ~ 4,
+      P49ST.A == 3 ~ 3,
+      P49ST.A == 4 ~ 2,
+      P49ST.A == 5 ~ 1,
+      TRUE ~ NA_real_
+    ),
+    p49b_droga = case_when(
+      P49ST.B == 1 ~ 5,
+      P49ST.B == 2 ~ 4,
+      P49ST.B == 3 ~ 3,
+      P49ST.B == 4 ~ 2,
+      P49ST.B == 5 ~ 1,
+      TRUE ~ NA_real_
+    ),
+    p49c_corrup = case_when(
+      P49ST.C == 1 ~ 5,
+      P49ST.C == 2 ~ 4,
+      P49ST.C == 3 ~ 3,
+      P49ST.C == 4 ~ 2,
+      P49ST.C == 5 ~ 1,
+      TRUE ~ NA_real_
+    ),
+# Variable P51
+    p51_preocup = case_when(
+      P51ST == 1 ~ 4,
+      P51ST == 2 ~ 3,
+      P51ST == 3 ~ 2,
+      P51ST == 4 ~ 1,
+      TRUE ~ NA_real_
+    ),
+# Variable P52N
+    p52n_narco = case_when(
+      P52N == 1 ~ 4,
+      P52N == 2 ~ 3,
+      P52N == 3 ~ 2,
+      P52N == 4 ~ 1,
+      TRUE ~ NA_real_
+    ),
+# Variable P53N, se mantienen valores y se transforma a numeric
+    p53n_narco_batalla = case_when(
+      P53N %in% c(1, 2, 3) ~ as.numeric(P53N),
+      TRUE ~ NA_real_
+    ),
+# Variable P54N, se mantienen valores y se transforma a numeric
+    p54_nivel_corrup = case_when(
+      P54N <= 10 ~ as.numeric(P54N),
+      TRUE ~ NA_real_
+    ),
+# Variable P55ST, se mantienen valores y se transforma a numeric
+    p55_progreso_corrup = case_when(
+      P55ST %in% c(1, 2, 3, 4) ~ as.numeric(P55ST),
+      TRUE ~ NA_real_ 
+    ))
+
+```
+
+
+```{r crear escalas}
+#| warning: false
+#| echo: false
+#| message: false
+
+# ---------------------------------------------------------------------
+# Normalización Min-Max y Creación de Escalas
+# ---------------------------------------------------------------------
+
+data_final <- data_procesada %>%
+  mutate(
+    norm_p49a = ((p49a_crimen - 1) / 4) * 100,
+    norm_p49b = ((p49b_droga - 1) / 4) * 100,
+    norm_p49c = ((p49c_corrup - 1) / 4) * 100,
+    norm_p51  = ((p51_preocup - 1) / 3) * 100,
+    norm_p52  = ((p52n_narco - 1) / 3) * 100,
+    norm_p53  = ((p53n_narco_batalla - 1) / 2) * 100,
+    norm_p54  = ((p54_nivel_corrup - 0) / 10) * 100,
+    norm_p55  = ((p55_progreso_corrup - 1) / 3) * 100
+  ) %>%
+  
+# Creación de escalas
+
+    rowwise() %>%
+  mutate(
+# Escala 1: Percepción de Delincuencia Común y Narcotráfico
+    escala_delincuencia_comun = mean(c(norm_p49a, norm_p49b, norm_p51, norm_p52, norm_p53), na.rm = TRUE),
+    
+# Escala 2: Percepción de Corrupción 
+    escala_corrupcion = mean(c(norm_p49c, norm_p54, norm_p55), na.rm = TRUE)
+  ) %>%
+  ungroup()
+
+
+summary(data_final %>% select(escala_delincuencia_comun, escala_corrupcion))
+
+
+# Guardar base final
+saveRDS(data_final, file = "input/data_proc.rds")
+
+```
+

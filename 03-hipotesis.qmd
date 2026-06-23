@@ -3,3 +3,12 @@ title: "Hipótesis"
 ---
 
 Hipótesis de investigación. Deben ser pre-registradas.
+
+### Hipotesis de diferencias
+Se espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas y altas. H0 (nula): No existe una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas y altas. 
+
+### Hipotesis direccional
+Respecto al tipo de delincuencia percibida, se espera que las clases sociales subjetivas bajas perciban más delincuencia común relacionada a la violencia y el narcotrafico, mientras que las clases sociales subjetivas altas perciban más delincuencia relacionada a la corrupción y el fraude. H0 (nula): No existe una diferencia en el tipo de delincuencia percibida entre clases sociales subjetivas bajas y altas.
+
+### Hipotesis correlacional
+Se espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, es decir, a medida que aumenta la clase social subjetiva, la percepción de la delincuencia disminuye. H0 (nula): No existe una correlación entre la percepción de la delincuencia y la clase social subjetiva.
