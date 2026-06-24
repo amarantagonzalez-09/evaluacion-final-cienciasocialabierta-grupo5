@@ -36,7 +36,7 @@ rm(list = ls()) # para limpiar el entorno de trabajo
 
 #Cargar bbdd
 
-data <- read_dta("input/Latinobarometro_2024_Chile_Stata_esp_v1.dta")
+data <- read_dta("input/data-orig.dta")
 
 #Seleccionar variables
 ltb_subset <- data %>%
@@ -173,7 +173,7 @@ summary(data_final %>% select(escala_delincuencia_comun, escala_corrupcion))
 
 
 # Guardar base final
-saveRDS(data_final, file = "input/data_proc.rds")
+saveRDS(data_final, file = "input/data-proc.rds")
 
 ```
 

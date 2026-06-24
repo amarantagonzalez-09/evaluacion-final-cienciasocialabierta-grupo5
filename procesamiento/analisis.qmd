@@ -1,0 +1,39 @@
+```{r cargar-librerias-y-bbdd}
+#| warning: false
+#| echo: false
+#| message: false
+
+#cargar librerías
+pacman::p_load(tidyverse, # Manipulacion datos
+               ggplot2, # Gráficos
+               sjPlot, # Tablas y gráficos
+               dplyr,
+               kable,
+               kableExtra,
+               haven,
+               tidyr,
+               knitr,
+               summarytools,
+               crosstable, 
+               table1) 
+               
+
+options(scipen = 999) # para desactivar notacion cientifica
+
+rm(list = ls()) # para limpiar el entorno de trabajo
+
+
+```
+
+
+```{r Cargar-bbdd}
+#| warning: false
+#| echo: false
+#| message: false
+
+#Cargar bbdd
+
+data <- read_dta("input/data-proc.rds")
+
+```
+

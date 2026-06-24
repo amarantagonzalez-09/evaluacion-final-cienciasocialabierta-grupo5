@@ -5,15 +5,17 @@ title: "Métodos"
 Los datos utilizados en esta investigación provienen de la Encuesta Latinobarómetro 2024, la cual es una encuesta de opinión pública que se realiza anualmente en 18 países de América Latina. La encuesta recopila información sobre diversos temas, incluyendo percepción de la delincuencia, clase social subjetiva, percepciones de la democracia, entre otros.
 
 ## Protocolo de Investigación
-
+Para este estudio se utiliza el protocolo IPO (Input-Process-Output), el cual permite estructurar la investigación de manera clara y organizada. En la carpeta Input se encuentra información externa como la base de datos original, la base procesada y la bibliografía. En la carpeta Process se encuentran los scripts de análisis y procesamiento de datos, mientras que en la carpeta Output se encuentran tablas, gráficos y salidas del procesamiento. 
 
 ## Variables
-Para este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva. 
+Para este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva. Se construirán dos escalas: una para medir la percepción de la delincuencia y otra para medir la percepción de la corrupción.
 
 Las variables seleccionadas son:
 
 ### Clase social subjetiva
 - **S2:** La gente algunas veces se describe a sí misma como perteneciendo a una clase social. ¿Ud. se describiría como perteneciendo a la clase...?(1=Alta, 2=Media Alta, 3=Media, 4=Media Baja, 5=Baja).
+
+La clase social subjetiva será recodificada en tres categorías: Clase Baja, Clase Media y Clase Alta, para facilitar el análisis y la interpretación de los resultados.
 
 ### Escala de percepción de la delincuencia común
 - **P49ST.A:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La delincuencia en general ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).
@@ -22,9 +24,15 @@ Las variables seleccionadas son:
 - **P52N:** ¿Cuán grave cree que es el problema del narcotráfico y crimen organizado en (PAÍS)? (1.Muy grave, 2. Bastante grave, 3. Poco grave, 4. Nada grave).
 - **P53N:** ¿Cuál de las siguientes frases está más cerca de su manera de pensar? (1. (PAÍS) le está ganando la batalla al narcotráfico y el crimen organizado, 2. (PAÍS) está perdiendo la batalla al narcotráfico y el crimen organizado, 3. No se puede ganarle al narcotráfico y el crimen organizado).
 
+Las variables seleccionadas para la escala serán recodificadas e invertidas para que los valores más altos representen una mayor percepción de la delincuencia común, asociada a violencia y narcotráfico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la delincuencia común.
+
 ### Escala de percepción de corrupción
 - **P49ST.C:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La corrupción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).
 - **P54N:** En una escala dónde “00" es “Para nada corrupto” y “10" “Totalmente corrupto”, ¿cuán corrupto cree Ud que es (PAÍS)? (0-10).
 - **P55ST:** ¿Cuánto cree Ud. que se ha progresado en reducir la corrupción en las instituciones del Estado en estos últimos 2 años? (1. Mucho, 2. Algo, 3. Poco, 4. Nada). 
 
+Dado que las variables de esta escala siguen la lógica de mayor percepción de corrupción = mayor valor, no es necesario invertir los valores, sólo son transformados a numérico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la corrupción. 
+
+## Métodos
+Respecto a las pruebas de hipótesis, se realizan las pruebas estadísticas correspondientes para respaldar o refutar las hipótesis planteadas. Para la hipotesis de diferencia de medias se utiliza una prueba ANOVA dado que se comparan más de dos grupos, para la hipotesis direccional 
 
