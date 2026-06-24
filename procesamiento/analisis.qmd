@@ -37,3 +37,45 @@ data <- read_dta("input/data-proc.rds")
 
 ```
 
+
+```{r Hipotesis-de diferencias}
+#| warning: false
+#| echo: false
+#| message: false
+
+anova_h1 <- aov(escala_delincuencia_comun ~ clase_grupos, data = data_final)
+summary(anova_h1)
+TukeyHSD(anova_h1)
+
+```
+
+
+```{r Hipotesis-direccional}
+#| warning: false
+#| echo: false
+#| message: false
+
+# Contraste para Delincuencia Común
+anova_h2_del <- aov(escala_delincuencia_comun ~ clase_3grupos, data = data_final)
+TukeyHSD(anova_h2_del)
+
+# Contraste para Corrupción
+anova_h2_cor <- aov(escala_corrupcion ~ clase_3grupos, data = data_final)
+TukeyHSD(anova_h2_cor)
+
+```
+
+
+```{r Hipotesis-correlacional}
+#| warning: false
+#| echo: false
+#| message: false
+
+# Opción A: Correlación de Spearman
+cor.test(data_final$clase_subjetiva, data_final$escala_delincuencia_comun, method = "spearman")
+
+
+```
+
+
+

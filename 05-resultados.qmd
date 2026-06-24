@@ -2,3 +2,81 @@
 title: "Resultados"
 ---
 Interpreta resultados, limitaciones y aportes.
+```{r cargar-librerias-y-bbdd}
+#| warning: false
+#| echo: false
+#| message: false
+
+#cargar librerías
+pacman::p_load(tidyverse, # Manipulacion datos
+               ggplot2, # Gráficos
+               sjPlot, # Tablas y gráficos
+               dplyr,
+               kable,
+               kableExtra,
+               haven,
+               tidyr,
+               knitr,
+               summarytools,
+               crosstable, 
+               table1) 
+               
+
+options(scipen = 999) # para desactivar notacion cientifica
+
+rm(list = ls()) # para limpiar el entorno de trabajo
+
+
+```
+
+
+```{r Cargar-bbdd}
+#| warning: false
+#| echo: false
+#| message: false
+
+#Cargar bbdd
+
+data <- readRDS("input/data-proc.rds")
+
+```
+
+## Hipotesis de diferencias
+```{r Hipotesis-de diferencias}
+#| warning: false
+#| echo: false
+#| message: false
+
+anova_h1 <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
+summary(anova_h1)
+TukeyHSD(anova_h1)
+
+```
+
+## Hipotesis direccional
+```{r Hipotesis-direccional}
+#| warning: false
+#| echo: false
+#| message: false
+
+# Contraste para Delincuencia Común
+anova_h2_del <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
+TukeyHSD(anova_h2_del)
+
+# Contraste para Corrupción
+anova_h2_cor <- aov(escala_corrupcion ~ clase_grupos, data = data)
+TukeyHSD(anova_h2_cor)
+
+```
+
+## Hipotesis correlacional
+```{r Hipotesis-correlacional}
+#| warning: false
+#| echo: false
+#| message: false
+
+# Opción A: Correlación de Spearman
+cor.test(data$clase_subjetiva, data$escala_delincuencia_comun, method = "spearman")
+
+
+```

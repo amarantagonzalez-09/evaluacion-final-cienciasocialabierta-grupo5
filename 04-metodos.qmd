@@ -34,5 +34,5 @@ Las variables seleccionadas para la escala serán recodificadas e invertidas par
 Dado que las variables de esta escala siguen la lógica de mayor percepción de corrupción = mayor valor, no es necesario invertir los valores, sólo son transformados a numérico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la corrupción. 
 
 ## Métodos
-Respecto a las pruebas de hipótesis, se realizan las pruebas estadísticas correspondientes para respaldar o refutar las hipótesis planteadas. Para la hipotesis de diferencia de medias se utiliza una prueba ANOVA dado que se comparan más de dos grupos, para la hipotesis direccional 
+Respecto a las pruebas de hipótesis, se realizan las pruebas estadísticas correspondientes para respaldar o refutar las hipótesis planteadas. Para la hipotesis de diferencia de medias se utiliza una prueba ANOVA dado que se comparan más de dos grupos, para la hipotesis direccional se harán dos pruebas ANOVA independientes, una para la percepción de la delincuencia y otra para la percepción de la corrupción, y para la hipotesis correlacional se utiliza el coeficiente de correlación de Pearson entre las variables clase subjetiva y la escala de delincuencia común.
 

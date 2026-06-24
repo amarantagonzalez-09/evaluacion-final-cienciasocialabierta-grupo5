@@ -266,6 +266,7 @@ p {
   <li><a href="#escala-de-percepción-de-la-delincuencia-común" id="toc-escala-de-percepción-de-la-delincuencia-común" class="nav-link" data-scroll-target="#escala-de-percepción-de-la-delincuencia-común"><span class="header-section-number">5.3.2</span> Escala de percepción de la delincuencia común</a></li>
   <li><a href="#escala-de-percepción-de-corrupción" id="toc-escala-de-percepción-de-corrupción" class="nav-link" data-scroll-target="#escala-de-percepción-de-corrupción"><span class="header-section-number">5.3.3</span> Escala de percepción de corrupción</a></li>
   </ul></li>
+  <li><a href="#métodos" id="toc-métodos" class="nav-link" data-scroll-target="#métodos"><span class="header-section-number">5.4</span> Métodos</a></li>
   </ul>
 </nav>
     </div>
@@ -297,16 +298,18 @@ p {
 </section>
 <section id="protocolo-de-investigación" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="protocolo-de-investigación"><span class="header-section-number">5.2</span> Protocolo de Investigación</h2>
+<p>Para este estudio se utiliza el protocolo IPO (Input-Process-Output), el cual permite estructurar la investigación de manera clara y organizada. En la carpeta Input se encuentra información externa como la base de datos original, la base procesada y la bibliografía. En la carpeta Process se encuentran los scripts de análisis y procesamiento de datos, mientras que en la carpeta Output se encuentran tablas, gráficos y salidas del procesamiento.</p>
 </section>
 <section id="variables" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="variables"><span class="header-section-number">5.3</span> Variables</h2>
-<p>Para este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva.</p>
+<p>Para este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva. Se construirán dos escalas: una para medir la percepción de la delincuencia y otra para medir la percepción de la corrupción.</p>
 <p>Las variables seleccionadas son:</p>
 <section id="clase-social-subjetiva" class="level3" data-number="5.3.1">
 <h3 data-number="5.3.1" class="anchored" data-anchor-id="clase-social-subjetiva"><span class="header-section-number">5.3.1</span> Clase social subjetiva</h3>
 <ul>
 <li><strong>S2:</strong> La gente algunas veces se describe a sí misma como perteneciendo a una clase social. ¿Ud. se describiría como perteneciendo a la clase…?(1=Alta, 2=Media Alta, 3=Media, 4=Media Baja, 5=Baja).</li>
 </ul>
+<p>La clase social subjetiva será recodificada en tres categorías: Clase Baja, Clase Media y Clase Alta, para facilitar el análisis y la interpretación de los resultados.</p>
 </section>
 <section id="escala-de-percepción-de-la-delincuencia-común" class="level3" data-number="5.3.2">
 <h3 data-number="5.3.2" class="anchored" data-anchor-id="escala-de-percepción-de-la-delincuencia-común"><span class="header-section-number">5.3.2</span> Escala de percepción de la delincuencia común</h3>
@@ -317,6 +320,7 @@ p {
 <li><strong>P52N:</strong> ¿Cuán grave cree que es el problema del narcotráfico y crimen organizado en (PAÍS)? (1.Muy grave, 2. Bastante grave, 3. Poco grave, 4. Nada grave).</li>
 <li><strong>P53N:</strong> ¿Cuál de las siguientes frases está más cerca de su manera de pensar? (1. (PAÍS) le está ganando la batalla al narcotráfico y el crimen organizado, 2. (PAÍS) está perdiendo la batalla al narcotráfico y el crimen organizado, 3. No se puede ganarle al narcotráfico y el crimen organizado).</li>
 </ul>
+<p>Las variables seleccionadas para la escala serán recodificadas e invertidas para que los valores más altos representen una mayor percepción de la delincuencia común, asociada a violencia y narcotráfico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la delincuencia común.</p>
 </section>
 <section id="escala-de-percepción-de-corrupción" class="level3" data-number="5.3.3">
 <h3 data-number="5.3.3" class="anchored" data-anchor-id="escala-de-percepción-de-corrupción"><span class="header-section-number">5.3.3</span> Escala de percepción de corrupción</h3>
@@ -325,11 +329,16 @@ p {
 <li><strong>P54N:</strong> En una escala dónde “00” es “Para nada corrupto” y “10” “Totalmente corrupto”, ¿cuán corrupto cree Ud que es (PAÍS)? (0-10).</li>
 <li><strong>P55ST:</strong> ¿Cuánto cree Ud. que se ha progresado en reducir la corrupción en las instituciones del Estado en estos últimos 2 años? (1. Mucho, 2. Algo, 3. Poco, 4. Nada).</li>
 </ul>
+<p>Dado que las variables de esta escala siguen la lógica de mayor percepción de corrupción = mayor valor, no es necesario invertir los valores, sólo son transformados a numérico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la corrupción.</p>
+</section>
+</section>
+<section id="métodos" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="métodos"><span class="header-section-number">5.4</span> Métodos</h2>
+<p>Respecto a las pruebas de hipótesis, se realizan las pruebas estadísticas correspondientes para respaldar o refutar las hipótesis planteadas. Para la hipotesis de diferencia de medias se utiliza una prueba ANOVA dado que se comparan más de dos grupos, para la hipotesis direccional</p>
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -2248,28 +2257,36 @@ document.addEventListener("DOMContentLoaded", () => {
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Los datos utilizados en esta investigación provienen de la Encuesta Latinobarómetro 2024, la cual es una encuesta de opinión pública que se realiza anualmente en 18 países de América Latina. La encuesta recopila información sobre diversos temas, incluyendo percepción de la delincuencia, clase social subjetiva, percepciones de la democracia, entre otros.</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Protocolo de Investigación</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Para este estudio se utiliza el protocolo IPO (Input-Process-Output), el cual permite estructurar la investigación de manera clara y organizada. En la carpeta Input se encuentra información externa como la base de datos original, la base procesada y la bibliografía. En la carpeta Process se encuentran los scripts de análisis y procesamiento de datos, mientras que en la carpeta Output se encuentran tablas, gráficos y salidas del procesamiento. </span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Variables</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Para este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva. </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Para este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva. Se construirán dos escalas: una para medir la percepción de la delincuencia y otra para medir la percepción de la corrupción.</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Las variables seleccionadas son:</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">### Clase social subjetiva</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**S2:** La gente algunas veces se describe a sí misma como perteneciendo a una clase social. ¿Ud. se describiría como perteneciendo a la clase...?(1=Alta, 2=Media Alta, 3=Media, 4=Media Baja, 5=Baja).</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escala de percepción de la delincuencia común</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P49ST.A:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La delincuencia en general ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P49ST.B:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La drogadicción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P51ST:** ¿Con qué frecuencia se preocupa Ud. de que pueda llegar a ser víctima de un delito con violencia? (1.Todo o casi todo el tiempo, 2. Algunas veces, 3. Ocasionalmente, 4. Nunca).</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P52N:** ¿Cuán grave cree que es el problema del narcotráfico y crimen organizado en (PAÍS)? (1.Muy grave, 2. Bastante grave, 3. Poco grave, 4. Nada grave).</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P53N:** ¿Cuál de las siguientes frases está más cerca de su manera de pensar? (1. (PAÍS) le está ganando la batalla al narcotráfico y el crimen organizado, 2. (PAÍS) está perdiendo la batalla al narcotráfico y el crimen organizado, 3. No se puede ganarle al narcotráfico y el crimen organizado).</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escala de percepción de corrupción</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P49ST.C:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La corrupción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P54N:** En una escala dónde “00" es “Para nada corrupto” y “10" “Totalmente corrupto”, ¿cuán corrupto cree Ud que es (PAÍS)? (0-10).</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P55ST:** ¿Cuánto cree Ud. que se ha progresado en reducir la corrupción en las instituciones del Estado en estos últimos 2 años? (1. Mucho, 2. Algo, 3. Poco, 4. Nada). </span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>La clase social subjetiva será recodificada en tres categorías: Clase Baja, Clase Media y Clase Alta, para facilitar el análisis y la interpretación de los resultados.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escala de percepción de la delincuencia común</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P49ST.A:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La delincuencia en general ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P49ST.B:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La drogadicción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P51ST:** ¿Con qué frecuencia se preocupa Ud. de que pueda llegar a ser víctima de un delito con violencia? (1.Todo o casi todo el tiempo, 2. Algunas veces, 3. Ocasionalmente, 4. Nunca).</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P52N:** ¿Cuán grave cree que es el problema del narcotráfico y crimen organizado en (PAÍS)? (1.Muy grave, 2. Bastante grave, 3. Poco grave, 4. Nada grave).</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P53N:** ¿Cuál de las siguientes frases está más cerca de su manera de pensar? (1. (PAÍS) le está ganando la batalla al narcotráfico y el crimen organizado, 2. (PAÍS) está perdiendo la batalla al narcotráfico y el crimen organizado, 3. No se puede ganarle al narcotráfico y el crimen organizado).</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Las variables seleccionadas para la escala serán recodificadas e invertidas para que los valores más altos representen una mayor percepción de la delincuencia común, asociada a violencia y narcotráfico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la delincuencia común.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escala de percepción de corrupción</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P49ST.C:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La corrupción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P54N:** En una escala dónde “00" es “Para nada corrupto” y “10" “Totalmente corrupto”, ¿cuán corrupto cree Ud que es (PAÍS)? (0-10).</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P55ST:** ¿Cuánto cree Ud. que se ha progresado en reducir la corrupción en las instituciones del Estado en estos últimos 2 años? (1. Mucho, 2. Algo, 3. Poco, 4. Nada). </span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Dado que las variables de esta escala siguen la lógica de mayor percepción de corrupción = mayor valor, no es necesario invertir los valores, sólo son transformados a numérico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la corrupción. </span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Métodos</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Respecto a las pruebas de hipótesis, se realizan las pruebas estadísticas correspondientes para respaldar o refutar las hipótesis planteadas. Para la hipotesis de diferencia de medias se utiliza una prueba ANOVA dado que se comparan más de dos grupos, para la hipotesis direccional </span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

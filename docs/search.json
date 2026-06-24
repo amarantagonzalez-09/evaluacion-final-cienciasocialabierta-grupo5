@@ -54,7 +54,7 @@
     "href": "05-resultados.html",
     "title": "6  Resultados",
     "section": "",
-    "text": "Interpreta resultados, limitaciones y aportes.",
+    "text": "6.1 Hipotesis de diferencias\nInterpreta resultados, limitaciones y aportes.\nDf Sum Sq Mean Sq F value Pr(&gt;F)\nclase_grupos    2    182   91.19   0.697  0.498\nResiduals    1190 155587  130.75               \n7 observations deleted due to missingness\n\n\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_delincuencia_comun ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr      upr     p adj\nClase Baja-Clase Alta  1.3463214 -2.868732 5.561375 0.7339657\nClase Media-Clase Alta 1.8456578 -2.337074 6.028390 0.5545930\nClase Media-Clase Baja 0.4993364 -1.092994 2.091667 0.7421969",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
     ]
@@ -106,7 +106,7 @@
     "href": "04-metodos.html#protocolo-de-investigación",
     "title": "5  Métodos",
     "section": "5.2 Protocolo de Investigación",
-    "text": "5.2 Protocolo de Investigación",
+    "text": "5.2 Protocolo de Investigación\nPara este estudio se utiliza el protocolo IPO (Input-Process-Output), el cual permite estructurar la investigación de manera clara y organizada. En la carpeta Input se encuentra información externa como la base de datos original, la base procesada y la bibliografía. En la carpeta Process se encuentran los scripts de análisis y procesamiento de datos, mientras que en la carpeta Output se encuentran tablas, gráficos y salidas del procesamiento.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
     ]
@@ -116,9 +116,39 @@
     "href": "04-metodos.html#variables",
     "title": "5  Métodos",
     "section": "5.3 Variables",
-    "text": "5.3 Variables\nPara este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva.\nLas variables seleccionadas son:\n\n5.3.1 Clase social subjetiva\n\nS2: La gente algunas veces se describe a sí misma como perteneciendo a una clase social. ¿Ud. se describiría como perteneciendo a la clase…?(1=Alta, 2=Media Alta, 3=Media, 4=Media Baja, 5=Baja).\n\n\n\n5.3.2 Escala de percepción de la delincuencia común\n\nP49ST.A: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La delincuencia en general ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP49ST.B: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La drogadicción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP51ST: ¿Con qué frecuencia se preocupa Ud. de que pueda llegar a ser víctima de un delito con violencia? (1.Todo o casi todo el tiempo, 2. Algunas veces, 3. Ocasionalmente, 4. Nunca).\nP52N: ¿Cuán grave cree que es el problema del narcotráfico y crimen organizado en (PAÍS)? (1.Muy grave, 2. Bastante grave, 3. Poco grave, 4. Nada grave).\nP53N: ¿Cuál de las siguientes frases está más cerca de su manera de pensar? (1. (PAÍS) le está ganando la batalla al narcotráfico y el crimen organizado, 2. (PAÍS) está perdiendo la batalla al narcotráfico y el crimen organizado, 3. No se puede ganarle al narcotráfico y el crimen organizado).\n\n\n\n5.3.3 Escala de percepción de corrupción\n\nP49ST.C: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La corrupción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP54N: En una escala dónde “00” es “Para nada corrupto” y “10” “Totalmente corrupto”, ¿cuán corrupto cree Ud que es (PAÍS)? (0-10).\nP55ST: ¿Cuánto cree Ud. que se ha progresado en reducir la corrupción en las instituciones del Estado en estos últimos 2 años? (1. Mucho, 2. Algo, 3. Poco, 4. Nada).",
+    "text": "5.3 Variables\nPara este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva. Se construirán dos escalas: una para medir la percepción de la delincuencia y otra para medir la percepción de la corrupción.\nLas variables seleccionadas son:\n\n5.3.1 Clase social subjetiva\n\nS2: La gente algunas veces se describe a sí misma como perteneciendo a una clase social. ¿Ud. se describiría como perteneciendo a la clase…?(1=Alta, 2=Media Alta, 3=Media, 4=Media Baja, 5=Baja).\n\nLa clase social subjetiva será recodificada en tres categorías: Clase Baja, Clase Media y Clase Alta, para facilitar el análisis y la interpretación de los resultados.\n\n\n5.3.2 Escala de percepción de la delincuencia común\n\nP49ST.A: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La delincuencia en general ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP49ST.B: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La drogadicción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP51ST: ¿Con qué frecuencia se preocupa Ud. de que pueda llegar a ser víctima de un delito con violencia? (1.Todo o casi todo el tiempo, 2. Algunas veces, 3. Ocasionalmente, 4. Nunca).\nP52N: ¿Cuán grave cree que es el problema del narcotráfico y crimen organizado en (PAÍS)? (1.Muy grave, 2. Bastante grave, 3. Poco grave, 4. Nada grave).\nP53N: ¿Cuál de las siguientes frases está más cerca de su manera de pensar? (1. (PAÍS) le está ganando la batalla al narcotráfico y el crimen organizado, 2. (PAÍS) está perdiendo la batalla al narcotráfico y el crimen organizado, 3. No se puede ganarle al narcotráfico y el crimen organizado).\n\nLas variables seleccionadas para la escala serán recodificadas e invertidas para que los valores más altos representen una mayor percepción de la delincuencia común, asociada a violencia y narcotráfico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la delincuencia común.\n\n\n5.3.3 Escala de percepción de corrupción\n\nP49ST.C: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La corrupción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP54N: En una escala dónde “00” es “Para nada corrupto” y “10” “Totalmente corrupto”, ¿cuán corrupto cree Ud que es (PAÍS)? (0-10).\nP55ST: ¿Cuánto cree Ud. que se ha progresado en reducir la corrupción en las instituciones del Estado en estos últimos 2 años? (1. Mucho, 2. Algo, 3. Poco, 4. Nada).\n\nDado que las variables de esta escala siguen la lógica de mayor percepción de corrupción = mayor valor, no es necesario invertir los valores, sólo son transformados a numérico. Luego los valores son normalizados para que estén en un rango de 0 a 100, y finalmente se calcula el promedio de los valores normalizados para obtener una escala de percepción de la corrupción.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
+    ]
+  },
+  {
+    "objectID": "04-metodos.html#métodos",
+    "href": "04-metodos.html#métodos",
+    "title": "5  Métodos",
+    "section": "5.4 Métodos",
+    "text": "5.4 Métodos\nRespecto a las pruebas de hipótesis, se realizan las pruebas estadísticas correspondientes para respaldar o refutar las hipótesis planteadas. Para la hipotesis de diferencia de medias se utiliza una prueba ANOVA dado que se comparan más de dos grupos, para la hipotesis direccional",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html#hipotesis-direccional",
+    "href": "05-resultados.html#hipotesis-direccional",
+    "title": "6  Resultados",
+    "section": "6.2 Hipotesis direccional",
+    "text": "6.2 Hipotesis direccional\n\n\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_delincuencia_comun ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr      upr     p adj\nClase Baja-Clase Alta  1.3463214 -2.868732 5.561375 0.7339657\nClase Media-Clase Alta 1.8456578 -2.337074 6.028390 0.5545930\nClase Media-Clase Baja 0.4993364 -1.092994 2.091667 0.7421969\n\n\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_corrupcion ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr        upr     p adj\nClase Baja-Clase Alta  16.495609 10.092588 22.8986304 0.0000000\nClase Media-Clase Alta 14.035878  7.681955 20.3898004 0.0000008\nClase Media-Clase Baja -2.459731 -4.878616 -0.0408469 0.0452095",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html#hipotesis-correlacional",
+    "href": "05-resultados.html#hipotesis-correlacional",
+    "title": "6  Resultados",
+    "section": "6.3 Hipotesis correlacional",
+    "text": "6.3 Hipotesis correlacional\n\n\n\n    Spearman's rank correlation rho\n\ndata:  data$clase_subjetiva and data$escala_delincuencia_comun\nS = 284667894, p-value = 0.8378\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n         rho \n-0.005932208",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
     ]
   }
 ]

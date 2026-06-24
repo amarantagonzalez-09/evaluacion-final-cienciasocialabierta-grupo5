@@ -1,0 +1,15 @@
+{
+  "hash": "ce81ed8036f04c8970c8e029c37c6378",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Resultados\"\n---\nInterpreta resultados, limitaciones y aportes.\n\n::: {.cell}\n\n:::\n\n\n\n\n::: {.cell}\n\n:::\n\n\n## Hipotesis de diferencias\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n               Df Sum Sq Mean Sq F value Pr(>F)\nclase_grupos    2    182   91.19   0.697  0.498\nResiduals    1190 155587  130.75               \n7 observations deleted due to missingness\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_delincuencia_comun ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr      upr     p adj\nClase Baja-Clase Alta  1.3463214 -2.868732 5.561375 0.7339657\nClase Media-Clase Alta 1.8456578 -2.337074 6.028390 0.5545930\nClase Media-Clase Baja 0.4993364 -1.092994 2.091667 0.7421969\n```\n\n\n:::\n:::\n\n\n## Hipotesis direccional\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_delincuencia_comun ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr      upr     p adj\nClase Baja-Clase Alta  1.3463214 -2.868732 5.561375 0.7339657\nClase Media-Clase Alta 1.8456578 -2.337074 6.028390 0.5545930\nClase Media-Clase Baja 0.4993364 -1.092994 2.091667 0.7421969\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stdout}\n\n```\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_corrupcion ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr        upr     p adj\nClase Baja-Clase Alta  16.495609 10.092588 22.8986304 0.0000000\nClase Media-Clase Alta 14.035878  7.681955 20.3898004 0.0000008\nClase Media-Clase Baja -2.459731 -4.878616 -0.0408469 0.0452095\n```\n\n\n:::\n:::\n\n\n## Hipotesis correlacional\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n\n\tSpearman's rank correlation rho\n\ndata:  data$clase_subjetiva and data$escala_delincuencia_comun\nS = 284667894, p-value = 0.8378\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n         rho \n-0.005932208 \n```\n\n\n:::\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
