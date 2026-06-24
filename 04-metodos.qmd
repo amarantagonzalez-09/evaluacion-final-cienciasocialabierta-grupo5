@@ -1,5 +1,30 @@
 ﻿---
 title: "Métodos"
 ---
+## Datos 
+Los datos utilizados en esta investigación provienen de la Encuesta Latinobarómetro 2024, la cual es una encuesta de opinión pública que se realiza anualmente en 18 países de América Latina. La encuesta recopila información sobre diversos temas, incluyendo percepción de la delincuencia, clase social subjetiva, percepciones de la democracia, entre otros.
 
-Datos y protocolo de investigación
+## Protocolo de Investigación
+
+
+## Variables
+Para este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva. 
+
+Las variables seleccionadas son:
+
+### Clase social subjetiva
+- **S2:** La gente algunas veces se describe a sí misma como perteneciendo a una clase social. ¿Ud. se describiría como perteneciendo a la clase...?(1=Alta, 2=Media Alta, 3=Media, 4=Media Baja, 5=Baja).
+
+### Escala de percepción de la delincuencia común
+- **P49ST.A:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La delincuencia en general ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).
+- **P49ST.B:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La drogadicción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).
+- **P51ST:** ¿Con qué frecuencia se preocupa Ud. de que pueda llegar a ser víctima de un delito con violencia? (1.Todo o casi todo el tiempo, 2. Algunas veces, 3. Ocasionalmente, 4. Nunca).
+- **P52N:** ¿Cuán grave cree que es el problema del narcotráfico y crimen organizado en (PAÍS)? (1.Muy grave, 2. Bastante grave, 3. Poco grave, 4. Nada grave).
+- **P53N:** ¿Cuál de las siguientes frases está más cerca de su manera de pensar? (1. (PAÍS) le está ganando la batalla al narcotráfico y el crimen organizado, 2. (PAÍS) está perdiendo la batalla al narcotráfico y el crimen organizado, 3. No se puede ganarle al narcotráfico y el crimen organizado).
+
+### Escala de percepción de corrupción
+- **P49ST.C:** De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La corrupción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).
+- **P54N:** En una escala dónde “00" es “Para nada corrupto” y “10" “Totalmente corrupto”, ¿cuán corrupto cree Ud que es (PAÍS)? (0-10).
+- **P55ST:** ¿Cuánto cree Ud. que se ha progresado en reducir la corrupción en las instituciones del Estado en estos últimos 2 años? (1. Mucho, 2. Algo, 3. Poco, 4. Nada). 
+
+

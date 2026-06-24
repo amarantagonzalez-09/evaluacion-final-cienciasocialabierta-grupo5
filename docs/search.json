@@ -44,7 +44,7 @@
     "href": "04-metodos.html",
     "title": "5  Métodos",
     "section": "",
-    "text": "Datos y protocolo de investigación",
+    "text": "5.1 Datos\nLos datos utilizados en esta investigación provienen de la Encuesta Latinobarómetro 2024, la cual es una encuesta de opinión pública que se realiza anualmente en 18 países de América Latina. La encuesta recopila información sobre diversos temas, incluyendo percepción de la delincuencia, clase social subjetiva, percepciones de la democracia, entre otros.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
     ]
@@ -99,6 +99,26 @@
     "crumbs": [
       "Apéndices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Tablas adicionales</span>"
+    ]
+  },
+  {
+    "objectID": "04-metodos.html#protocolo-de-investigación",
+    "href": "04-metodos.html#protocolo-de-investigación",
+    "title": "5  Métodos",
+    "section": "5.2 Protocolo de Investigación",
+    "text": "5.2 Protocolo de Investigación",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
+    ]
+  },
+  {
+    "objectID": "04-metodos.html#variables",
+    "href": "04-metodos.html#variables",
+    "title": "5  Métodos",
+    "section": "5.3 Variables",
+    "text": "5.3 Variables\nPara este estudio, se seleccionaron las variables relacionadas con la percepción de la delincuencia y la clase social subjetiva.\nLas variables seleccionadas son:\n\n5.3.1 Clase social subjetiva\n\nS2: La gente algunas veces se describe a sí misma como perteneciendo a una clase social. ¿Ud. se describiría como perteneciendo a la clase…?(1=Alta, 2=Media Alta, 3=Media, 4=Media Baja, 5=Baja).\n\n\n\n5.3.2 Escala de percepción de la delincuencia común\n\nP49ST.A: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La delincuencia en general ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP49ST.B: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La drogadicción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP51ST: ¿Con qué frecuencia se preocupa Ud. de que pueda llegar a ser víctima de un delito con violencia? (1.Todo o casi todo el tiempo, 2. Algunas veces, 3. Ocasionalmente, 4. Nunca).\nP52N: ¿Cuán grave cree que es el problema del narcotráfico y crimen organizado en (PAÍS)? (1.Muy grave, 2. Bastante grave, 3. Poco grave, 4. Nada grave).\nP53N: ¿Cuál de las siguientes frases está más cerca de su manera de pensar? (1. (PAÍS) le está ganando la batalla al narcotráfico y el crimen organizado, 2. (PAÍS) está perdiendo la batalla al narcotráfico y el crimen organizado, 3. No se puede ganarle al narcotráfico y el crimen organizado).\n\n\n\n5.3.3 Escala de percepción de corrupción\n\nP49ST.C: De la lista de problemas que le voy a leer, ¿Cree Ud. que han aumentado mucho o poco, han permanecido igual o han disminuido poco o mucho en los últimos doce meses? La corrupción ha….(1.Aumentado mucho, 2. Aumentado poco, 3. Permanecido igual, 4. Disminuido poco, 5. Disminuido mucho).\nP54N: En una escala dónde “00” es “Para nada corrupto” y “10” “Totalmente corrupto”, ¿cuán corrupto cree Ud que es (PAÍS)? (0-10).\nP55ST: ¿Cuánto cree Ud. que se ha progresado en reducir la corrupción en las instituciones del Estado en estos últimos 2 años? (1. Mucho, 2. Algo, 3. Poco, 4. Nada).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
     ]
   }
 ]
