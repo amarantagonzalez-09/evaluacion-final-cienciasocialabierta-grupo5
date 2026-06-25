@@ -14,9 +14,8 @@ pacman::p_load(tidyverse, # Manipulacion datos
                tidyr,
                knitr,
                summarytools,
-               crosstable, 
-               table1) 
-               
+               crosstable,
+               table1)
 
 options(scipen = 999) # para desactivar notacion cientifica
 
@@ -33,7 +32,7 @@ rm(list = ls()) # para limpiar el entorno de trabajo
 
 #Cargar bbdd
 
-data <- read_dta("input/data-proc.rds")
+data <- readRDS("input/data-proc.rds")
 
 ```
 
@@ -43,7 +42,7 @@ data <- read_dta("input/data-proc.rds")
 #| echo: false
 #| message: false
 
-anova_h1 <- aov(escala_delincuencia_comun ~ clase_grupos, data = data_final)
+anova_h1 <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
 summary(anova_h1)
 TukeyHSD(anova_h1)
 
@@ -56,12 +55,82 @@ TukeyHSD(anova_h1)
 #| message: false
 
 # Contraste para Delincuencia Común
-anova_h2_del <- aov(escala_delincuencia_comun ~ clase_3grupos, data = data_final)
+anova_h2_del <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
 TukeyHSD(anova_h2_del)
 
 # Contraste para Corrupción
-anova_h2_cor <- aov(escala_corrupcion ~ clase_3grupos, data = data_final)
+anova_h2_cor <- aov(escala_corrupcion ~ clase_grupos, data = data)
 TukeyHSD(anova_h2_cor)
+
+```
+
+```{r grafico_hipotesis2}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Comparación de medias de percepción según clase social subjetiva"
+
+# 1. Reestructurar los datos a formato largo
+data_grafico <- data %>%
+  filter(!is.na(clase_grupos)) %>%
+  select(clase_grupos, escala_delincuencia_comun, escala_corrupcion) %>%
+  pivot_longer(
+    cols = starts_with("escala"),
+    names_to = "tipo_problema",
+    values_to = "puntuacion"
+  ) %>%
+  mutate(
+    tipo_problema = case_when(
+      tipo_problema == "escala_delincuencia_comun" ~ "Delincuencia Común y Narcotráfico",
+      tipo_problema == "escala_corrupcion"          ~ "Corrupción y Fraude"
+    ),
+    clase_grupos = factor(clase_grupos, levels = c("Clase Baja", "Clase Media", "Clase Alta"))
+  )
+
+# 2. Calcular medias e intervalos de confianza por grupo
+data_resumen <- data_grafico %>%
+  group_by(tipo_problema, clase_grupos) %>%
+  summarise(
+    media = mean(puntuacion, na.rm = TRUE),
+    sd = sd(puntuacion, na.rm = TRUE),
+    n = n(),
+    error_estandar = sd / sqrt(n),
+    ic_inf = media - (1.96 * error_estandar),
+    ic_sup = media + (1.96 * error_estandar),
+    .groups = "drop"
+  )
+
+# 3. Crear y plotear el gráfico con ggplot2
+ggplot(data_resumen, aes(x = clase_grupos, y = media, fill = clase_grupos)) +
+  geom_bar(stat = "identity", width = 0.6, alpha = 0.85, show.legend = FALSE) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup), width = 0.15, color = "black", alpha = 0.7) +
+  facet_wrap(~tipo_problema) +
+  geom_text(aes(label = round(media, 1)), vjust = -1.5, size = 3.5, fontface = "bold") +
+  scale_fill_viridis_d(option = "mako", begin = 0.3, end = 0.8) +
+  scale_y_continuous(limits = c(0, 110), breaks = seq(0, 100, 20)) +
+  labs(
+    title = "Percepción de Problemáticas según Estatus Social Subjetivo",
+    subtitle = "Promedios observados con intervalos de confianza al 95%",
+    x = "Clase Social Autopercibida",
+    y = "Puntaje Promedio (Escala 0 a 100)",
+    caption = "Fuente: Elaboración propia basada en datos de Latinobarómetro."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold", size = 14, margin = margin(b = 5)),
+    plot.subtitle = element_text(color = "gray40", size = 11, margin = margin(b = 15)),
+    strip.text = element_text(face = "bold", size = 12, color = "white"),
+    strip.background = element_rect(fill = "#2c3e50", color = NA),
+    panel.grid.major.x = element_blank(),
+    panel.spacing = unit(2, "lines")
+  ) 
+
+ggsave(
+  filename = "output/grafico-hipotesis2.png",
+  width = 9,
+  height = 6,
+  dpi = 300
+)
 
 ```
 
@@ -72,7 +141,7 @@ TukeyHSD(anova_h2_cor)
 #| message: false
 
 # Opción A: Correlación de Spearman
-cor.test(data_final$clase_subjetiva, data_final$escala_delincuencia_comun, method = "spearman")
+cor.test(data$clase_subjetiva, data$escala_delincuencia_comun, method = "spearman")
 
 
 ```

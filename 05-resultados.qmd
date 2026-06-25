@@ -18,10 +18,8 @@ pacman::p_load(tidyverse, # Manipulacion datos
                tidyr,
                knitr,
                summarytools,
-               crosstable, 
-               table1) 
-               
-
+               crosstable,
+               table1)
 options(scipen = 999) # para desactivar notacion cientifica
 
 rm(list = ls()) # para limpiar el entorno de trabajo
@@ -42,6 +40,8 @@ data <- readRDS("input/data-proc.rds")
 ```
 
 ## Hipotesis de diferencias
+Para la hipótesis de diferencias de medias, donde se espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas, medias y altas, se realizó un análisis ANOVA para comparar las medias de la escala de percepción de la delincuencia común entre los diferentes grupos de clase social subjetiva. 
+
 ```{r Hipotesis-de diferencias}
 #| warning: false
 #| echo: false
@@ -49,25 +49,38 @@ data <- readRDS("input/data-proc.rds")
 
 anova_h1 <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
 summary(anova_h1)
-TukeyHSD(anova_h1)
 
 ```
 
+Los resultados indican que la clase social subjetiva no tiene un efecto significativo en la percepción de la delincuencia común, ya que el valor p es mayor a 0.05 (F(2, 1190) = 0.697, p = 0.498). Esto sugiere que no hay diferencias significativas en la percepción de la delincuencia común entre los diferentes grupos de clase social subjetiva, en consecuencia se acepta la hipótesis nula. 
+
 ## Hipotesis direccional
+Para la hipótesis direccional, donde se espera que las clases sociales subjetivas bajas perciban más delincuencia común relacionada a la violencia y el narcotráfico, mientras que las clases sociales subjetivas altas perciban más delincuencia relacionada a la corrupción y el fraude, se realizaron dos análisis ANOVA independientes, uno para la escala de percepción de la delincuencia común, que se muestra en la primera hipotésis y otro para la escala de percepción de la corrupción.
+
 ```{r Hipotesis-direccional}
 #| warning: false
 #| echo: false
 #| message: false
 
-# Contraste para Delincuencia Común
-anova_h2_del <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
-TukeyHSD(anova_h2_del)
-
-# Contraste para Corrupción
 anova_h2_cor <- aov(escala_corrupcion ~ clase_grupos, data = data)
+summary(anova_h2_cor)
+
+```
+
+Los resultados del análisis ANOVA para la escala de percepción de la delincuencia común indican que no hay diferencias significativas entre los grupos de clase social subjetiva (F(2, 1190) = 0.697, p = 0.498). Por otro lado, los resultados del análisis ANOVA para la escala de percepción de la corrupción indican que existen diferencias significativas entre los grupos de clase social subjetiva y la percepción de la corrupción.
+
+```{r Hipotesis-direccional}
+#| warning: false
+#| echo: false
+#| message: false
+
 TukeyHSD(anova_h2_cor)
 
 ```
+
+Para verificar entre qué grupos existen diferencias significativas, se realizó la prueba post-hoc de Tukey. Se encuentra que la clase baja puntúa 16.5 puntos más alto que la clase alta en la escala de percepción de la corrupción, la clase media puntúa 14.04 puntos más alto que la clase alta y la clase media puntúa 2.46 puntos más bajo que la clase baja. Estos resultados son significativos y sugieren que las clases sociales subjetivas bajas y medias perciben más corrupción que las clases sociales subjetivas altas.
+
+
 
 ## Hipotesis correlacional
 ```{r Hipotesis-correlacional}
