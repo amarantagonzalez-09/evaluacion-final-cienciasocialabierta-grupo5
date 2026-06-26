@@ -34,7 +34,7 @@
     "href": "03-hipotesis.html",
     "title": "4  Hipótesis",
     "section": "",
-    "text": "Hipótesis de investigación. Deben ser pre-registradas.\n\n4.0.1 Hipotesis de diferencias\nSe espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas, medias y altas. H0 (nula): No existe una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas y altas.\n\n\n4.0.2 Hipotesis direccional\nRespecto al tipo de delincuencia percibida, se espera que las clases sociales subjetivas bajas perciban más delincuencia común relacionada a la violencia y el narcotrafico, mientras que las clases sociales subjetivas altas perciban más delincuencia relacionada a la corrupción y el fraude. H0 (nula): No existe una diferencia en el tipo de delincuencia percibida entre clases sociales subjetivas bajas y altas.\n\n\n4.0.3 Hipotesis correlacional\nSe espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, es decir, a medida que aumenta la clase social subjetiva, la percepción de la delincuencia disminuye. H0 (nula): No existe una correlación entre la percepción de la delincuencia y la clase social subjetiva.",
+    "text": "Las hipotesis planteadas en este estudio se centran en la relación entre la percepción de la delincuencia y la clase social subjetiva. Todas fueron pre registradas en Open Science Framework (OSF) y se pueden consultar en el siguiente enlace:\n\n4.0.1 Hipotesis de diferencias\nSe espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas, medias y altas. H0 (nula): No existe una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas y altas.\n\n\n4.0.2 Hipotesis direccional\nRespecto al tipo de delincuencia percibida, se espera que las clases sociales subjetivas bajas perciban más delincuencia común relacionada a la violencia y el narcotrafico, mientras que las clases sociales subjetivas altas perciban más delincuencia relacionada a la corrupción y el fraude. H0 (nula): No existe una diferencia en el tipo de delincuencia percibida entre clases sociales subjetivas bajas y altas.\n\n\n4.0.3 Hipotesis correlacional\nSe espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, es decir, a medida que aumenta la clase social subjetiva, la percepción de la delincuencia disminuye. H0 (nula): No existe una correlación entre la percepción de la delincuencia y la clase social subjetiva.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hipótesis</span>"
     ]
@@ -146,7 +146,7 @@
     "href": "05-resultados.html#hipotesis-correlacional",
     "title": "6  Resultados",
     "section": "6.3 Hipotesis correlacional",
-    "text": "6.3 Hipotesis correlacional\n\n\n\n    Spearman's rank correlation rho\n\ndata:  data$clase_subjetiva and data$escala_delincuencia_comun\nS = 284667894, p-value = 0.8378\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n         rho \n-0.005932208",
+    "text": "6.3 Hipotesis correlacional\nPara evaluar la hipotesis correlacional, donde se espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, se realizó un análisis de correlación de Spearman entre la variable de clase social subjetiva y la escala de percepción de la delincuencia común.\n\n\n\n    Spearman's rank correlation rho\n\ndata:  data$clase_subjetiva and data$escala_delincuencia_comun\nS = 284667894, p-value = 0.8378\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n         rho \n-0.005932208 \n\n\nLos resultados demuestran una ausencia de relación significativa entre la percepción de la delincuencia y la clase social subjetiva (rho = -0.005, p = 0.83). Dado que el valor p es mayor a 0.05, se acepta la hipótesis nula y se conncluye que la clase social subjetiva no está asociada con la percepción de la delincuencia común.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
     ]
@@ -155,8 +155,18 @@
     "objectID": "05-resultados.html#limitaciones-y-aportes",
     "href": "05-resultados.html#limitaciones-y-aportes",
     "title": "6  Resultados",
-    "section": "6.4 Limitaciones y aportes",
-    "text": "6.4 Limitaciones y aportes",
+    "section": "6.5 Limitaciones y aportes",
+    "text": "6.5 Limitaciones y aportes",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html#interpretaciones",
+    "href": "05-resultados.html#interpretaciones",
+    "title": "6  Resultados",
+    "section": "6.4 Interpretaciones",
+    "text": "6.4 Interpretaciones",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
     ]

@@ -261,7 +261,8 @@ p {
   <li><a href="#hipotesis-de-diferencias" id="toc-hipotesis-de-diferencias" class="nav-link active" data-scroll-target="#hipotesis-de-diferencias"><span class="header-section-number">6.1</span> Hipotesis de diferencias</a></li>
   <li><a href="#hipotesis-direccional" id="toc-hipotesis-direccional" class="nav-link" data-scroll-target="#hipotesis-direccional"><span class="header-section-number">6.2</span> Hipotesis direccional</a></li>
   <li><a href="#hipotesis-correlacional" id="toc-hipotesis-correlacional" class="nav-link" data-scroll-target="#hipotesis-correlacional"><span class="header-section-number">6.3</span> Hipotesis correlacional</a></li>
-  <li><a href="#limitaciones-y-aportes" id="toc-limitaciones-y-aportes" class="nav-link" data-scroll-target="#limitaciones-y-aportes"><span class="header-section-number">6.4</span> Limitaciones y aportes</a></li>
+  <li><a href="#interpretaciones" id="toc-interpretaciones" class="nav-link" data-scroll-target="#interpretaciones"><span class="header-section-number">6.4</span> Interpretaciones</a></li>
+  <li><a href="#limitaciones-y-aportes" id="toc-limitaciones-y-aportes" class="nav-link" data-scroll-target="#limitaciones-y-aportes"><span class="header-section-number">6.5</span> Limitaciones y aportes</a></li>
   </ul>
 </nav>
     </div>
@@ -333,6 +334,7 @@ Clase Media-Clase Baja -2.459731 -4.878616 -0.0408469 0.0452095</code></pre>
 </section>
 <section id="hipotesis-correlacional" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="hipotesis-correlacional"><span class="header-section-number">6.3</span> Hipotesis correlacional</h2>
+<p>Para evaluar la hipotesis correlacional, donde se espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, se realizó un análisis de correlación de Spearman entre la variable de clase social subjetiva y la escala de percepción de la delincuencia común.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -346,9 +348,13 @@ sample estimates:
 -0.005932208 </code></pre>
 </div>
 </div>
+<p>Los resultados demuestran una ausencia de relación significativa entre la percepción de la delincuencia y la clase social subjetiva (rho = -0.005, p = 0.83). Dado que el valor p es mayor a 0.05, se acepta la hipótesis nula y se conncluye que la clase social subjetiva no está asociada con la percepción de la delincuencia común.</p>
 </section>
-<section id="limitaciones-y-aportes" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="limitaciones-y-aportes"><span class="header-section-number">6.4</span> Limitaciones y aportes</h2>
+<section id="interpretaciones" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="interpretaciones"><span class="header-section-number">6.4</span> Interpretaciones</h2>
+</section>
+<section id="limitaciones-y-aportes" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="limitaciones-y-aportes"><span class="header-section-number">6.5</span> Limitaciones y aportes</h2>
 
 
 <!-- -->
@@ -2348,20 +2354,23 @@ document.addEventListener("DOMContentLoaded", () => {
 <span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="al">![](output\grafico-hipotesis2.png)</span></span>
 <span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hipotesis correlacional</span></span>
-<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Hipotesis-correlacional}</span></span>
-<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
-<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a><span class="co"># Opción A: Correlación de Spearman</span></span>
-<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(data<span class="sc">$</span>clase_subjetiva, data<span class="sc">$</span>escala_delincuencia_comun, <span class="at">method =</span> <span class="st">"spearman"</span>)</span>
-<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>Para evaluar la hipotesis correlacional, donde se espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, se realizó un análisis de correlación de Spearman entre la variable de clase social subjetiva y la escala de percepción de la delincuencia común.</span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Hipotesis-correlacional}</span></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a><span class="co"># Opción A: Correlación de Spearman</span></span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(data<span class="sc">$</span>clase_subjetiva, data<span class="sc">$</span>escala_delincuencia_comun, <span class="at">method =</span> <span class="st">"spearman"</span>)</span>
 <span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>Los resultados demuestran una ausencia de relación significativa entre la percepción de la delincuencia y la clase social subjetiva (rho = -0.005, p = 0.83). Dado que el valor p es mayor a 0.05, se acepta la hipótesis nula y se conncluye que la clase social subjetiva no está asociada con la percepción de la delincuencia común.</span>
 <span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## Limitaciones y aportes</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretaciones</span></span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a><span class="fu">## Limitaciones y aportes</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
