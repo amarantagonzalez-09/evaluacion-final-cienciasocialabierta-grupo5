@@ -43,9 +43,6 @@ book:
     - 05-resultados.qmd
     - 06-conclusiones.qmd
     - references.qmd
-  appendices:
-    - apendices/A-encuestas.qmd
-    - apendices/B-tablas.qmd
     # Guarda anexos extensos en apendices/ y listalos aqui.
 
 csl: refs/apa.csl                # Estilo de citas (cambia a otro .csl si lo prefieres)
