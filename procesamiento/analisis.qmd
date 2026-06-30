@@ -118,12 +118,15 @@ ggplot(data_resumen, aes(x = clase_grupos, y = media, fill = clase_grupos)) +
   theme_minimal(base_size = 12) +
   theme(
     plot.title = element_text(face = "bold", size = 14, margin = margin(b = 5)),
-    plot.subtitle = element_text(color = "gray40", size = 11, margin = margin(b = 15)),
+    plot.subtitle = element_text(
+        color = "gray40", 
+        size = 11, 
+        margin = margin(b = 15)),
     strip.text = element_text(face = "bold", size = 12, color = "white"),
     strip.background = element_rect(fill = "#2c3e50", color = NA),
     panel.grid.major.x = element_blank(),
     panel.spacing = unit(2, "lines")
-  ) 
+  )
 
 ggsave(
   filename = "output/grafico-hipotesis2.png",

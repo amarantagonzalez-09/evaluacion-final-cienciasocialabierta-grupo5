@@ -34,7 +34,7 @@
     "href": "03-hipotesis.html",
     "title": "4  Hipótesis",
     "section": "",
-    "text": "Hipótesis de investigación. Deben ser pre-registradas.\n\n4.0.1 Hipotesis de diferencias\nSe espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas, medias y altas. H0 (nula): No existe una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas y altas.\n\n\n4.0.2 Hipotesis direccional\nRespecto al tipo de delincuencia percibida, se espera que las clases sociales subjetivas bajas perciban más delincuencia común relacionada a la violencia y el narcotrafico, mientras que las clases sociales subjetivas altas perciban más delincuencia relacionada a la corrupción y el fraude. H0 (nula): No existe una diferencia en el tipo de delincuencia percibida entre clases sociales subjetivas bajas y altas.\n\n\n4.0.3 Hipotesis correlacional\nSe espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, es decir, a medida que aumenta la clase social subjetiva, la percepción de la delincuencia disminuye. H0 (nula): No existe una correlación entre la percepción de la delincuencia y la clase social subjetiva.",
+    "text": "Las hipotesis planteadas en este estudio se centran en la relación entre la percepción de la delincuencia y la clase social subjetiva. Todas fueron pre registradas en Open Science Framework (OSF) y se pueden consultar en el siguiente enlace:\n\n4.0.1 Hipotesis de diferencias\nSe espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas, medias y altas. H0 (nula): No existe una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas y altas.\n\n\n4.0.2 Hipotesis direccional\nRespecto al tipo de delincuencia percibida, se espera que las clases sociales subjetivas bajas perciban más delincuencia común relacionada a la violencia y el narcotrafico, mientras que las clases sociales subjetivas altas perciban más delincuencia relacionada a la corrupción y el fraude. H0 (nula): No existe una diferencia en el tipo de delincuencia percibida entre clases sociales subjetivas bajas y altas.\n\n\n4.0.3 Hipotesis correlacional\nSe espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, es decir, a medida que aumenta la clase social subjetiva, la percepción de la delincuencia disminuye. H0 (nula): No existe una correlación entre la percepción de la delincuencia y la clase social subjetiva.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hipótesis</span>"
     ]
@@ -54,7 +54,7 @@
     "href": "05-resultados.html",
     "title": "6  Resultados",
     "section": "",
-    "text": "6.1 Hipotesis de diferencias\nInterpreta resultados, limitaciones y aportes.\nPara la hipótesis de diferencias de medias, se realizó un análisis ANOVA para comparar las medias de la escala de percepción de la delincuencia común entre los diferentes grupos de clase social subjetiva.\nDf Sum Sq Mean Sq F value Pr(&gt;F)\nclase_grupos    2    182   91.19   0.697  0.498\nResiduals    1190 155587  130.75               \n7 observations deleted due to missingness\nLos resultados indican que la clase social subjetiva no tiene un efecto significativo en la percepción de la delincuencia común, ya que el valor p es mayor a 0.05 (F(2, 1190) = 0.697, p = 0.498). Esto sugiere que no hay diferencias significativas en la percepción de la delincuencia común entre los diferentes grupos de clase social subjetiva, en consecuencia se acepta la hipótesis nula.",
+    "text": "6.1 Hipotesis de diferencias\nPara la hipótesis de diferencias de medias, donde se espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas, medias y altas, se realizó un análisis ANOVA para comparar las medias de la escala de percepción de la delincuencia común entre los diferentes grupos de clase social subjetiva.\nDf Sum Sq Mean Sq F value Pr(&gt;F)\nclase_grupos    2    182   91.19   0.697  0.498\nResiduals    1190 155587  130.75               \n7 observations deleted due to missingness\nLos resultados indican que la clase social subjetiva no tiene un efecto significativo en la percepción de la delincuencia común, ya que el valor p es mayor a 0.05 (F(2, 1190) = 0.697, p = 0.498). Esto sugiere que no hay diferencias significativas en la percepción de la delincuencia común entre los diferentes grupos de clase social subjetiva, en consecuencia se acepta la hipótesis nula.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
     ]
@@ -136,7 +136,7 @@
     "href": "05-resultados.html#hipotesis-direccional",
     "title": "6  Resultados",
     "section": "6.2 Hipotesis direccional",
-    "text": "6.2 Hipotesis direccional\n\n\n               Df Sum Sq Mean Sq F value Pr(&gt;F)\nclase_grupos    2    182   91.19   0.697  0.498\nResiduals    1190 155587  130.75               \n7 observations deleted due to missingness\n\n\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_delincuencia_comun ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr      upr     p adj\nClase Baja-Clase Alta  1.3463214 -2.868732 5.561375 0.7339657\nClase Media-Clase Alta 1.8456578 -2.337074 6.028390 0.5545930\nClase Media-Clase Baja 0.4993364 -1.092994 2.091667 0.7421969\n\n\n               Df Sum Sq Mean Sq F value        Pr(&gt;F)    \nclase_grupos    2  11424    5712   18.93 0.00000000805 ***\nResiduals    1190 359036     302                          \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n7 observations deleted due to missingness\n\n\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_corrupcion ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr        upr     p adj\nClase Baja-Clase Alta  16.495609 10.092588 22.8986304 0.0000000\nClase Media-Clase Alta 14.035878  7.681955 20.3898004 0.0000008\nClase Media-Clase Baja -2.459731 -4.878616 -0.0408469 0.0452095",
+    "text": "6.2 Hipotesis direccional\nPara la hipótesis direccional, donde se espera que las clases sociales subjetivas bajas perciban más delincuencia común relacionada a la violencia y el narcotráfico, mientras que las clases sociales subjetivas altas perciban más delincuencia relacionada a la corrupción y el fraude, se realizaron dos análisis ANOVA independientes, uno para la escala de percepción de la delincuencia común, que se muestra en la primera hipotésis y otro para la escala de percepción de la corrupción.\n\n\n               Df Sum Sq Mean Sq F value        Pr(&gt;F)    \nclase_grupos    2  11424    5712   18.93 0.00000000805 ***\nResiduals    1190 359036     302                          \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n7 observations deleted due to missingness\n\n\nLos resultados del análisis ANOVA para la escala de percepción de la delincuencia común indican que no hay diferencias significativas entre los grupos de clase social subjetiva (F(2, 1190) = 0.697, p = 0.498). Por otro lado, los resultados del análisis ANOVA para la escala de percepción de la corrupción indican que existen diferencias significativas entre los grupos de clase social subjetiva y la percepción de la corrupción.\n\n\n  Tukey multiple comparisons of means\n    95% family-wise confidence level\n\nFit: aov(formula = escala_corrupcion ~ clase_grupos, data = data)\n\n$clase_grupos\n                            diff       lwr        upr     p adj\nClase Baja-Clase Alta  16.495609 10.092588 22.8986304 0.0000000\nClase Media-Clase Alta 14.035878  7.681955 20.3898004 0.0000008\nClase Media-Clase Baja -2.459731 -4.878616 -0.0408469 0.0452095\n\n\nPara verificar entre qué grupos existen diferencias significativas, se realizó la prueba post-hoc de Tukey. Se encuentra que la clase baja puntúa 16.5 puntos más alto que la clase alta en la escala de percepción de la corrupción, la clase media puntúa 14.04 puntos más alto que la clase alta y la clase media puntúa 2.46 puntos más bajo que la clase baja. Estos resultados son significativos y sugieren que las clases sociales subjetivas bajas y medias perciben más corrupción que las clases sociales subjetivas altas.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
     ]
@@ -146,7 +146,27 @@
     "href": "05-resultados.html#hipotesis-correlacional",
     "title": "6  Resultados",
     "section": "6.3 Hipotesis correlacional",
-    "text": "6.3 Hipotesis correlacional\n\n\n\n    Spearman's rank correlation rho\n\ndata:  data$clase_subjetiva and data$escala_delincuencia_comun\nS = 284667894, p-value = 0.8378\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n         rho \n-0.005932208",
+    "text": "6.3 Hipotesis correlacional\nPara evaluar la hipotesis correlacional, donde se espera que exista una correlación negativa entre la percepción de la delincuencia y la clase social subjetiva, se realizó un análisis de correlación de Spearman entre la variable de clase social subjetiva y la escala de percepción de la delincuencia común.\n\n\n\n    Spearman's rank correlation rho\n\ndata:  data$clase_subjetiva and data$escala_delincuencia_comun\nS = 284667894, p-value = 0.8378\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n         rho \n-0.005932208 \n\n\nLos resultados demuestran una ausencia de relación significativa entre la percepción de la delincuencia y la clase social subjetiva (rho = -0.005, p = 0.83). Dado que el valor p es mayor a 0.05, se acepta la hipótesis nula y se conncluye que la clase social subjetiva no está asociada con la percepción de la delincuencia común.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html#limitaciones-y-aportes",
+    "href": "05-resultados.html#limitaciones-y-aportes",
+    "title": "6  Resultados",
+    "section": "6.5 Limitaciones y aportes",
+    "text": "6.5 Limitaciones y aportes",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html#interpretaciones",
+    "href": "05-resultados.html#interpretaciones",
+    "title": "6  Resultados",
+    "section": "6.4 Interpretaciones",
+    "text": "6.4 Interpretaciones",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
     ]

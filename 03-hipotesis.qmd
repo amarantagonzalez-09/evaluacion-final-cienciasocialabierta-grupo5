@@ -2,7 +2,7 @@
 title: "Hipótesis"
 ---
 
-Hipótesis de investigación. Deben ser pre-registradas.
+Las hipotesis planteadas en este estudio se centran en la relación entre la percepción de la delincuencia y la clase social subjetiva. Todas fueron pre registradas en Open Science Framework (OSF) y se pueden consultar en el siguiente enlace:
 
 ### Hipotesis de diferencias
 Se espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas, medias y altas. H0 (nula): No existe una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas y altas. 
