@@ -46,6 +46,13 @@ anova_h1 <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
 summary(anova_h1)
 TukeyHSD(anova_h1)
 
+anova_h1 <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
+anova_h1_tabla<-tidy(anova_h1) %>% 
+  kable(digits = 3, format = "html", caption = "Tabla 1: ANOVA para Hipótesis 1") %>% 
+  kableExtra::kable_classic(full_width = FALSE, position = "center", font_size = 14) 
+
+save_kable(anova_h1_tabla, file = "output/anova_h1_tabla.html")
+
 ```
 
 
@@ -57,10 +64,40 @@ TukeyHSD(anova_h1)
 # Contraste para Delincuencia Común
 anova_h2_del <- aov(escala_delincuencia_comun ~ clase_grupos, data = data)
 TukeyHSD(anova_h2_del)
+anova_h2_del_tabla<-tidy(anova_h2_del) %>% 
+  kable(digits = 3, format = "html", caption = "Tabla 2: ANOVA para Hipótesis 2. Delincuencia común")  %>% 
+  kableExtra::kable_classic(full_width = FALSE, position = "center", font_size = 14) 
+save_kable(anova_h2_del_tabla, file = "output/anova_h2_del_tabla.html")
+
+
+tukey_anova_h2_cor_tabla <- tidy(TukeyHSD(anova_h2_cor)) %>%
+  rename(
+    `Comparación` = contrast,
+    `Diferencia de Medias (diff)` = estimate,
+    `Límite Inferior (lwr)` = conf.low,
+    `Límite Superior (upr)` = conf.high,
+    `Valor p adj.` = adj.p.value
+  ) %>%
+  select(-term) %>%
+  kable(
+    digits = 3, 
+    format = "html",
+    caption = "Tabla 4. Prueba de Comparaciones Múltiples de Tukey (HSD) para la Percepción de la Delincuencia"
+  )  %>% 
+  kableExtra::kable_classic(full_width = FALSE, position = "center", font_size = 14) 
+save_kable(tukey_anova_h2_cor_tabla, file = "output/tukey_anova_h2_cor_tabla.html")
+
 
 # Contraste para Corrupción
 anova_h2_cor <- aov(escala_corrupcion ~ clase_grupos, data = data)
 TukeyHSD(anova_h2_cor)
+
+
+anova_h2_cor_tabla<-tidy(anova_h2_cor) %>% 
+  kable(digits = 3, format = "html", caption = "Tabla 3: ANOVA para Hipótesis 2. Corrupción")  %>% 
+  kableExtra::kable_classic(full_width = FALSE, position = "center", font_size = 14) 
+save_kable(anova_h2_cor_tabla, file = "output/anova_h2_cor_tabla.html")
+
 
 ```
 
@@ -144,9 +181,23 @@ ggsave(
 #| message: false
 
 # Opción A: Correlación de Spearman
-cor.test(data$clase_subjetiva, data$escala_delincuencia_comun, method = "spearman")
+test_spearman <- cor.test(data$clase_subjetiva, data$escala_delincuencia_comun, method = "spearman")
 
+test_spearman_tabla <- tidy(test_spearman) %>%
+  rename(
+    `Coeficiente Rho (ρ)` = estimate,
+    `Estadístico S` = statistic,
+    `Valor p` = p.value,
+    `Método` = method
+  ) %>%
+  kable(
+    digits = 3,
+    format = "html",
+    caption = "Tabla 5. Correlación de Rangos de Spearman entre Clase Social Subjetiva y Percepción de la Delincuencia"
+  )  %>% 
+  kableExtra::kable_classic(full_width = FALSE, position = "center", font_size = 14) 
 
+save_kable(test_spearman_tabla, file = "output/test_spearman_tabla.html")
 ```
 
 
