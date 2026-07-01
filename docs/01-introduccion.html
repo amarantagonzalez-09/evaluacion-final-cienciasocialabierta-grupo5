@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -58,7 +58,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -76,10 +96,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fd5297dacf173028d6edd3476b8de6b4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1d5e3d585a3f1a8b515e1f1f2ac14dab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -109,27 +129,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <style>
-
 #quarto-document-content p,
-
 .page-columns .content p,
-
 .page-columns p,
-
 .quarto-article p,
-
 main.content p,
-
 p {
-
   text-align: justify !important;
-
   text-justify: inter-word;
-
 }
-
 </style>
-
 
 
 <link rel="stylesheet" href="assets/styles.scss">
@@ -165,7 +174,7 @@ p {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Título del trabajo</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/KAravena/reportesfacsobook_template" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/amarantagonzalez-09/evaluacion-final-cienciasocialabierta-grupo5.git" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
     <a href="./reportes-facso-plantilla.pdf" title="Descargar PDF" class="quarto-navigation-tool px-1" aria-label="Descargar PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
@@ -253,8 +262,14 @@ p {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">3</span> Introducción</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -278,1453 +293,762 @@ p {
 </header>
 
 
-<p>Motivación, preguntas de investigación, Objetivo general y específicos, contribución esperada, estructura del documento.</p>
+<section id="introducción" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Introducción</h1>
+<p>En los últimos años, la inseguridad se ha convertido en una de las principales preocupaciones en el entorno nacional chileno. Esto, a pesar de que los estudios empíricos indiquen lo contrario en comparación con otros países ubicados en América Latina, donde las tasas de criminalidad y violencia son significativamente más altas. Esta contradicción se vuelve pertinente de analizar, pues como señala <span class="citation" data-cites="ImpactoMediosComunicacion">Klein (<a href="references.html#ref-ImpactoMediosComunicacion" role="doc-biblioref">2010</a>)</span>, “la ubicación de Chile bajo el promedio latinoamericano ha sido una constante desde mediados de los años noventa a la fecha” [p.&nbsp;6]. De este modo, Chile pertenece objetivamente al grupo de los países más seguros de la región, llegando a ser considerado incluso el más seguro de América Latina.</p>
+<p>Sin embargo, la preocupación en la sociedad chilena en torno a la delincuencia y el temor a ser víctima de un delito se mantienen en niveles elevados, superando en ocasiones el promedio regional latinoamericano. De hecho, <span class="citation" data-cites="ImpactoMediosComunicacion">Klein (<a href="references.html#ref-ImpactoMediosComunicacion" role="doc-biblioref">2010</a>)</span> constata que, para el año 2007, “con 30,2% Chile supera por casi un 13% el promedio latinoamericano” [p.&nbsp;119] en la percepción de la delincuencia como problema principal, una brecha que evidencia la profunda desconexión entre los indicadores objetivos de seguridad y la percepción ciudadana en Chile.</p>
+<p>Esta desconexión ha sido abordada por diversas líneas de investigación. Por un lado, estudios como el de <span class="citation" data-cites="ImpactoMediosComunicacion">Klein (<a href="references.html#ref-ImpactoMediosComunicacion" role="doc-biblioref">2010</a>)</span> han demostrado que los medios de comunicación, y en particular el consumo frecuente de noticias, juegan un rol central en la construcción de la percepción de inseguridad en Chile, “considerando el paisaje mediático y sobre todo las características de los contenidos noticieros, los cuales tienden a sobre-representar el tema de la delincuencia” [p.&nbsp;184].</p>
+<p><span class="citation" data-cites="layeraInseguridadPercibidaBarrios2020">Layera et&nbsp;al. (<a href="references.html#ref-layeraInseguridadPercibidaBarrios2020" role="doc-biblioref">2020</a>)</span> demostraron que la percepción que las personas tienen de su propia posición social influye más en su sensación de inseguridad que las condiciones objetivas del barrio. Según los autores, el estatus subjetivo “es una medida más sensitiva que el capital económico […] que podría evaluar con mayor precisión la influencia acumulada de la posición social y vulnerabilidad” [p.&nbsp;9]. Por lo que se vuelve pertinente analizar la clase social autopercibida y cómo podría considerarse un predictor clave al medir la percepción de la delincuencia.</p>
+<p>En este contexto, la presente investigación se propone explorar si la clase social subjetiva incide en la percepción de la delincuencia y, específicamente, si esta relación varía según el tipo de delito considerado. Se plantea que las personas que se autoposicionan en clases sociales más bajas tenderán a percibir con mayor intensidad los delitos vinculados a la violencia y el narcotráfico, mientras que aquellas ubicadas en clases sociales más altas tenderán a percibir con mayor fuerza la corrupción y el fraude.</p>
+<p>Por lo que las preguntas que guiarán la investigación serán:</p>
+<ol type="1">
+<li><p>¿Cómo se relaciona la autopercepción de clase social con la percepción de la delincuencia en Chile, y varía esta relación según el tipo de delito considerado?</p></li>
+<li><p>¿Existe una diferencia significativa en la percepción de la delincuencia entre personas de clases sociales subjetivas bajas, medias y altas?</p></li>
+<li><p>¿Existe una correlación negativa entre la clase social subjetiva y la percepción de la delincuencia, de modo que a mayor clase social, menor percepción de inseguridad?</p></li>
+</ol>
+<p>Con el principal objetivo de: Analizar la relación entre la clase social subjetiva y la percepción de la delincuencia en Chile, diferenciando el tipo de delito, a partir de los datos de la encuesta Latinobarómetro 2024 <span class="citation" data-cites="Latinobarometro2024">(<a href="references.html#ref-Latinobarometro2024" role="doc-biblioref"><em>Latinobarometro 2024</em>, s.&nbsp;f.</a>)</span>.</p>
+<p>La contribución esperada a nivel teórico es que este estudio contribuya a la literatura sobre la diferenciación social del miedo al delito en Chile, actualizando la evidencia con datos de Latinobarómetro 2024 y profundizando en la distinción entre tipos de delito. Esperando confirmar que la clase social subjetiva incide no solo en la intensidad del miedo, sino también en su dirección hacia ciertos fenómenos delictivos.</p>
+<p>En el nivel metodológico, el trabajo aplica prácticas de ciencia abierta tales como el uso de pre-registro, datos abiertos, y centrado en la posibilidad de reproducibilidad dentro del ámbito de las ciencias sociales.</p>
+<p>Por último, a nivel práctico, los resultados podrán entregar herramientas para el diseño de políticas de seguridad y comunicación que consideren las percepciones diferenciadas por clase social, evitando enfoques homogéneos que no responden a la realidad de los distintos grupos.</p>
+<p>El presente trabajo se organizará de la siguiente manera: en la sección de antecedentes, se revisa la literatura sobre la relación entre clase social y percepción de inseguridad, con énfasis en el caso chileno y el rol de los medios de comunicación. Luego, en metodología, se detalla el uso de datos abiertos (Latinobarómetro 2024), el protocolo de investigación (estructura IPO), las variables consideradas y las prácticas de ciencia abierta (OSF, pre-registro, Quarto Book). Posteriormente, se presentan los resultados obtenidos del análisis estadístico, seguidos de su discusión a la luz de la literatura revisada. Finalmente, se exponen las conclusiones, las limitaciones del estudio y las proyecciones para futuras investigaciones, junto con la disponibilidad del Preprint y los materiales reproducibles.</p>
 
 
 <!-- -->
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-ImpactoMediosComunicacion" class="csl-entry" role="listitem">
+Klein. (2010). <em>El Impacto de Los Medios de Comunicación de Masas En La Percepción de La Seguridad Pública. Un Estudio Empírico Del Caso Chileno En El Contexto Latinoamericano</em>. https://repositorio.uchile.cl/handle/2250/105817.
+</div>
+<div id="ref-Latinobarometro2024" class="csl-entry" role="listitem">
+<em>Latinobarometro 2024</em>. (s.&nbsp;f.). https://www.latinobarometro.org/latinobarometro-2024#LAT-2024-selected-country-header.
+</div>
+<div id="ref-layeraInseguridadPercibidaBarrios2020" class="csl-entry" role="listitem">
+Layera, M. L. M., Otero, G., &amp; Perret, V. (2020). <span>Inseguridad Percibida en los Barrios de Santiago de Chile: La Importancia del Bienestar Subjetivo</span>. <em>Dados</em>, <em>63</em>, e20170036. <a href="https://doi.org/10.1590/001152582020200">https://doi.org/10.1590/001152582020200</a>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script>
-
 window.addEventListener('load', function () {
-
   const selectors = [
-
     '.quarto-sidebar .logo img',
-
     '.quarto-sidebar .quarto-logo img',
-
     '.sidebar-logo img',
-
     '.site-logo img',
-
     'a.quarto-site-logo img'
-
   ];
 
-
-
   let logoImg = null;
-
   for (const selector of selectors) {
-
     logoImg = document.querySelector(selector);
-
     if (logoImg) break;
-
   }
-
-
 
   if (logoImg) {
-
     const link = document.createElement('a');
-
     link.href = 'index.html';
-
     logoImg.parentNode.insertBefore(link, logoImg);
-
     link.appendChild(logoImg);
-
   }
 
-
-
   const decodeMeta = (value) => {
-
     if (!value) return '';
-
     const trimmed = value.trim();
-
     if (!trimmed || trimmed.startsWith('{{')) return '';
-
     const textarea = document.createElement('textarea');
-
     textarea.innerHTML = trimmed;
-
     return textarea.value.trim();
-
   };
 
-
-
-  const metaRepoUrl = decodeMeta('https://github.com/KAravena/reportesfacsobook_template');
-
+  const metaRepoUrl = decodeMeta('https://github.com/amarantagonzalez-09/evaluacion-final-cienciasocialabierta-grupo5.git');
   const metaRepoUrlNormalized = metaRepoUrl ? metaRepoUrl.replace(/\/+$/g, '') : '';
 
-
-
   const computeArchiveUrl = (hrefHint) => {
-
     const baseHref = (hrefHint || metaRepoUrlNormalized || metaRepoUrl || '').trim();
-
     if (!baseHref) return '';
 
-
-
     try {
-
       const url = new URL(baseHref, window.location.href);
-
       const pathnameRaw = url.pathname.replace(/\/+$/g, '');
-
       const normalizeBranch = (value) => {
-
         const branch = (value || '').trim();
-
         return branch ? branch : 'main';
-
       };
 
-
-
       if (url.hostname.includes('github.')) {
-
         const match = pathnameRaw.match(/^\/([^/]+)\/([^/]+)(?:\/(tree|blob)\/([^/]+).*)?$/);
-
         if (!match) return '';
 
-
-
         const owner = match[1];
-
         const repo = match[2].replace(/\.git$/i, '');
-
         const branchFromPath = match[4];
-
         const branch = normalizeBranch(branchFromPath || url.searchParams.get('branch'));
 
-
-
         return `${url.origin}/${owner}/${repo}/archive/refs/heads/${branch}.zip`;
-
       }
-
-
 
       if (url.hostname.includes('gitlab.')) {
-
         const match = pathnameRaw.match(/^\/(.+?)(?:\/-\/tree\/([^/]+).*)?$/);
-
         if (!match) return '';
-
-
 
         const projectPath = match[1].replace(/\/+$/g, '');
-
         const repoName = projectPath.split('/').pop();
-
         const branchFromPath = match[2];
-
         const branch = normalizeBranch(branchFromPath || url.searchParams.get('ref')); // GitLab often uses ref param
 
-
-
         return `${url.origin}/${projectPath}/-/archive/${branch}/${repoName}-${branch}.zip`;
-
       }
-
-
 
       if (url.hostname.includes('bitbucket.')) {
-
         const match = pathnameRaw.match(/^\/([^/]+)\/([^/]+)(?:\/src\/([^/]+).*)?$/);
-
         if (!match) return '';
 
-
-
         const owner = match[1];
-
         const repo = match[2].replace(/\.git$/i, '');
-
         const branchFromPath = match[3];
-
         const branch = normalizeBranch(branchFromPath || url.searchParams.get('at'));
 
-
-
         return `${url.origin}/${owner}/${repo}/get/${branch}.zip`;
-
       }
-
-
 
       const branch = normalizeBranch(url.searchParams.get('branch'));
-
       return `${baseHref.replace(/\/+$/g, '')}/archive/refs/heads/${branch}.zip`;
-
     } catch (error) {
-
       return '';
-
     }
-
   };
 
-
-
   const ensureDownloadButton = (fromObserver = false) => {
-
     const tools = document.querySelector('.sidebar-title .sidebar-tools-main');
-
     if (!tools) {
-
       if (!fromObserver) {
-
         window.setTimeout(() => ensureDownloadButton(false), 100);
-
       }
-
       return;
-
     }
-
-
 
     let download = tools.querySelector('[data-template-download]');
-
     if (!download) {
-
       download = document.createElement('a');
-
       download.className = 'quarto-navigation-tool px-1';
-
       download.title = 'Descargar ZIP';
-
       download.setAttribute('aria-label', 'Descargar plantilla (ZIP)');
-
       download.setAttribute('data-template-download', 'true');
-
       download.target = '_blank';
-
       download.rel = 'noopener';
-
       download.innerHTML = '<i class="bi bi-download"></i>';
-
     }
-
-
 
     const links = Array.from(tools.querySelectorAll('a.quarto-navigation-tool'));
-
     let repoLink = null;
 
-
-
     if (metaRepoUrlNormalized) {
-
       repoLink = links.find((anchor) => {
-
         if (anchor === download) return false;
-
         const href = anchor.href ? anchor.href.replace(/\/+$/g, '') : '';
-
         return href === metaRepoUrlNormalized;
-
       });
-
     }
 
-
-
     if (!repoLink) {
-
       repoLink = links.find((anchor) => anchor !== download && anchor.querySelector('.bi-github'));
-
     }
-
-
 
     if (!repoLink) {
-
       repoLink = links.find((anchor) => {
-
         if (anchor === download) return false;
-
         const href = anchor.href || '';
-
         return /github\.|gitlab\.|bitbucket\./i.test(href);
-
       });
-
     }
-
-
 
     const archiveUrl = computeArchiveUrl(repoLink ? repoLink.href : undefined);
 
-
-
     if (!archiveUrl) {
-
       if (download.parentNode) {
-
         download.parentNode.removeChild(download);
-
       }
-
       return;
-
     }
-
-
 
     download.href = archiveUrl;
-
     download.title = 'Descargar plantilla (ZIP)';
-
     download.setAttribute('aria-label', 'Descargar plantilla (ZIP)');
-
     const codeToggle = links.find((anchor) => anchor.classList.contains('global-code-toggle'));
 
-
-
     if (repoLink) {
-
       repoLink.insertAdjacentElement('afterend', download);
-
     } else if (codeToggle) {
-
       codeToggle.insertAdjacentElement('beforebegin', download);
-
     } else {
-
       tools.insertBefore(download, tools.firstChild);
-
     }
-
   };
-
-
 
   ensureDownloadButton();
 
-
-
   const observer = new MutationObserver((mutations) => {
-
     const shouldUpdate = mutations.some((mutation) => {
-
       if (mutation.type !== 'childList') {
-
         return false;
-
       }
-
       return Array.from(mutation.addedNodes).some((node) => {
-
         if (!(node instanceof HTMLElement)) {
-
           return false;
-
         }
-
         return (
-
           node.classList.contains('global-code-toggle') ||
-
           (node.querySelector && node.querySelector('.global-code-toggle'))
-
         );
-
       });
-
     });
-
-
 
     if (shouldUpdate) {
-
       ensureDownloadButton(true);
-
     }
-
   });
 
-
-
   observer.observe(document.body, { childList: true, subtree: true });
-
 });
-
 </script>
-
 <script>
-
 (function () {
-
   var isReferences = /(?:^|\/)references\.html(?:#|$)/i.test(window.location.pathname);
 
-
-
   // Base relativa que Quarto publica (para apéndices/…)
-
   var offsetMeta = document.querySelector('meta[name="quarto:offset"]');
-
   var base = (offsetMeta && offsetMeta.content) ? offsetMeta.content : "";
 
-
-
   // 1) En capítulos: reescribe enlaces de cita -> references.html#ref-*
-
   if (!isReferences) {
-
     var cites = document.querySelectorAll('a[role="doc-biblioref"][href^="#ref-"]');
-
     cites.forEach(function (a) {
-
       var hash = a.getAttribute('href'); // "#ref-xxx"
-
       // Conserva tooltips. Añade marca para mostrar "volver" luego.
-
       a.setAttribute('href', base + 'references.html' + hash);
-
       a.setAttribute('data-citefix', 'from-chapter');
-
     });
 
-
-
     // Oculta bibliografía local si citeproc la insertó
-
     var localRefsBlocks = document.querySelectorAll('section.footnotes, div#refs, div.references, section#references');
-
     localRefsBlocks.forEach(function (el) { el.style.display = 'none'; });
-
   }
-
-
 
   // 2) En references.html: añade botón "Volver" si se llega desde otra página
-
   if (isReferences) {
-
     var cameFromOutside = document.referrer && !/\/references\.html(?:#|$)/i.test(new URL(document.referrer).pathname);
-
     if (cameFromOutside && window.history && window.history.length > 1) {
-
       var btn = document.createElement('button');
-
       btn.type = 'button';
-
       btn.textContent = '← Volver';
-
       btn.setAttribute('aria-label', 'Volver a la página anterior');
-
       btn.style.position = 'fixed';
-
       btn.style.right = '1rem';
-
       btn.style.bottom = '1rem';
-
       btn.style.zIndex = '9999';
-
       btn.style.padding = '.6rem .9rem';
-
       btn.style.borderRadius = '10px';
-
       btn.style.border = '1px solid rgba(0,0,0,.15)';
-
       btn.style.background = 'var(--bs-body-bg, #fff)';
-
       btn.style.color = 'var(--bs-body-color, #111)';
-
       btn.style.boxShadow = '0 6px 16px rgba(0,0,0,.12)';
-
       btn.onclick = function () { history.back(); };
-
       document.body.appendChild(btn);
-
     }
-
-
 
     // Si llegamos con hash (#ref-xxx), desplaza con un pequeño retardo
-
     // para asegurar que el layout esté listo.
-
     if (location.hash && /^#ref-/.test(location.hash)) {
-
       setTimeout(function () {
-
         try {
-
           var target = document.getElementById(location.hash.substring(1));
-
           if (target) target.scrollIntoView({behavior: 'smooth', block: 'start'});
-
         } catch (e) {}
-
       }, 50);
-
     }
-
   }
-
 })();
-
 </script>
 
-
-
 <style>
-
 /* Evita que el ancla de referencias quede “tapada” por el encabezado */
-
 .csl-entry[id^="ref-"],
-
 [id^="ref-"] { scroll-margin-top: 90px; }
 
-
-
 /* Ajuste suave para tooltips / focos de enlaces */
-
 a[role="doc-biblioref"]:focus-visible {
-
   outline: 2px dashed var(--facso-2, #84A7D8);
-
   outline-offset: 2px;
-
 }
 
-
-
 /* Opcional: separadores más legibles en la lista de referencias */
-
 #refs .csl-entry { padding: .25rem 0; border-bottom: 1px dashed rgba(0,0,0,.06); }
-
 #refs .csl-entry:last-child { border-bottom: none; }
-
 </style>
-
 <script>
-
 document.addEventListener("DOMContentLoaded", () => {
-
   const parseNumberParts = (value) =>
-
     (value || "")
-
       .split(".")
-
       .map((part) => parseInt(part, 10))
-
       .filter((num) => !Number.isNaN(num));
-
-
 
   const formatNumberParts = (parts) => parts.join(".");
 
-
-
   const adjustNumber = (value) => {
-
     const trimmed = (value || "").trim();
-
     if (!/^\d/.test(trimmed)) {
-
       return trimmed;
-
     }
-
     const parts = parseNumberParts(trimmed);
-
     if (!parts.length) {
-
       return "";
-
     }
-
   parts[0] = parts[0] - 1;
-
     if (parts[0] <= 0) {
-
       return "";
-
     }
-
     return formatNumberParts(parts);
-
   };
-
-
 
   const removeSpacer = (node) => {
-
     let sibling = node.nextSibling;
-
     while (sibling && sibling.nodeType === Node.TEXT_NODE) {
-
       const cleaned = sibling.textContent.replace(/\u00a0/g, "").trim();
-
       const next = sibling.nextSibling;
-
       if (cleaned.length === 0) {
-
         sibling.remove();
-
         sibling = next;
-
       } else {
-
         break;
-
       }
-
     }
-
   };
-
-
 
   const clearNumber = (node) => {
-
     if (!node) return;
-
     node.textContent = "";
-
     node.classList.add("chapter-number--hidden");
-
     node.style.display = "none";
-
     removeSpacer(node);
-
   };
 
-
-
   const ensureChapterSpacing = (node) => {
-
     if (!node || !node.classList.contains("chapter-number")) return;
 
-
-
     let numeric = (node.textContent || "").replace(/\.+\s*$/u, "");
-
     if (!numeric) return;
-
-
 
     node.textContent = numeric;
 
-
-
     const contextsNeedingSpace = node.closest(".quarto-title-block") ||
-
       node.closest("nav.quarto-page-breadcrumbs");
-
-
 
     node.textContent = `${numeric}.`;
 
-
-
     if (contextsNeedingSpace) {
-
       const next = node.nextSibling;
-
       const hasWhitespaceText =
-
         next &&
-
         next.nodeType === Node.TEXT_NODE &&
-
         /\s/.test(next.textContent || "");
-
       if (!hasWhitespaceText) {
-
         node.insertAdjacentText("afterend", "\u00a0");
-
       }
-
     }
-
   };
-
-
 
   const applyNumber = (node) => {
-
     if (!node) return;
-
     const adjusted = adjustNumber(node.textContent);
-
     if (!adjusted) {
-
       clearNumber(node);
-
     } else {
-
       node.textContent = adjusted;
-
       node.classList.remove("chapter-number--hidden");
-
       node.style.display = "inline-block";
-
       removeSpacer(node);
-
       ensureChapterSpacing(node);
-
     }
-
   };
-
-
 
   const updateDataNumber = (node) => {
-
     const current = node.getAttribute("data-number");
-
     if (current === null) return;
-
     const adjusted = adjustNumber(current);
-
     if (adjusted) {
-
       node.setAttribute("data-number", adjusted);
-
     } else {
-
       node.removeAttribute("data-number");
-
     }
-
   };
 
-
-
   const isFrontMatterHref = (href) =>
-
     /\/?index\.html(?:#|$)/i.test(href || "") ||
-
     /\/?00-prefacio\.html(?:#|$)/i.test(href || "");
 
-
-
   document
-
     .querySelectorAll(".sidebar .chapter-number")
-
     .forEach((node) => {
-
       const link = node.closest("a");
-
       const href = link ? link.getAttribute("href") : "";
-
       if (isFrontMatterHref(href)) {
-
         clearNumber(node);
-
       } else {
-
         applyNumber(node);
-
       }
-
     });
-
-
 
   const pathname = window.location.pathname || "";
 
-
-
   document
-
     .querySelectorAll('.quarto-title-block .chapter-number')
-
     .forEach((node) => {
-
       if (isFrontMatterHref(pathname)) {
-
         clearNumber(node);
-
       } else {
-
         applyNumber(node);
-
       }
-
     });
 
-
-
   document
-
     .querySelectorAll('nav.quarto-page-breadcrumbs .chapter-number')
-
     .forEach((node) => {
-
       const link = node.closest('a');
-
       const href = link ? link.getAttribute('href') : pathname;
-
       if (isFrontMatterHref(href)) {
-
         clearNumber(node);
-
       } else {
-
         applyNumber(node);
-
       }
-
     });
 
-
-
   document
-
     .querySelectorAll("main .header-section-number")
-
     .forEach((node) => {
-
       if (isFrontMatterHref(pathname)) {
-
         const section = node.closest("section");
-
         if (section && section.matches(".level1:first-of-type, .level2:first-of-type")) {
-
           clearNumber(node);
-
           return;
-
         }
-
       }
-
       applyNumber(node);
-
     });
 
-
-
   document
-
     .querySelectorAll("main [data-number]")
-
     .forEach(updateDataNumber);
 
-
-
   document
-
     .querySelectorAll("#TOC .header-section-number")
-
     .forEach((node) => {
-
       const link = node.closest("a");
-
       const href = link ? link.getAttribute("href") : "";
-
       if (isFrontMatterHref(href)) {
-
         clearNumber(node);
-
       } else {
-
         applyNumber(node);
-
       }
-
     });
 
-
-
   document
-
     .querySelectorAll("#TOC [data-number]")
-
     .forEach(updateDataNumber);
-
-
 
   document
-
     .querySelectorAll('#TOC a[data-scroll-target][data-number]')
-
     .forEach(updateDataNumber);
-
-
 
   const expandMarginToc = () => {
-
     const toc = document.getElementById("TOC");
-
     if (!toc) return;
-
     toc.querySelectorAll("ul.collapse").forEach((node) => {
-
       node.classList.remove("collapse");
-
       node.classList.add("toc-expanded");
-
     });
-
     toc.querySelectorAll("[data-bs-toggle='collapse']").forEach((trigger) => {
-
       trigger.removeAttribute("data-bs-toggle");
-
       trigger.setAttribute("aria-expanded", "true");
-
     });
-
   };
 
-
-
   expandMarginToc();
-
 });
-
 </script>
-
 <style>
-
 .sidebar .chapter-number {
-
   display: inline-block;
-
   min-width: 1ch;
-
   margin-right: 0.1ch;
-
   text-align: right;
-
   font-variant-numeric: tabular-nums;
-
 }
-
 .chapter-number--hidden {
-
   visibility: hidden !important;
-
   display: none !important;
-
 }
-
 .toc-expanded {
-
   display: block !important;
-
   visibility: visible !important;
-
   height: auto !important;
-
   overflow: visible !important;
-
 }
-
 </style>
 
-
-
 <script>
-
 document.addEventListener('DOMContentLoaded', function () {
-
   const codeSelectors = [
-
     '.cell > .code-copy-outer-scaffold',
-
     '.cell > .sourceCode',
-
     'pre.sourceCode',
-
     'div.sourceCode'
-
   ];
 
-
-
   const LABEL_SHOW = 'Mostrar el codigo';
-
   const LABEL_HIDE = 'Ocultar el codigo';
-
   const LABEL_EMPTY = 'Sin fragmentos de codigo';
-
   const ICON_SHOW = 'bi bi-code';
-
   const ICON_HIDE = 'bi bi-code-slash';
 
-
-
   const toolsContainer = document.querySelector('.sidebar-tools-main');
-
   let buttonHost = toolsContainer;
-
   let floatingContainer = null;
 
-
-
   if (!buttonHost) {
-
     floatingContainer = document.createElement('div');
-
     floatingContainer.className = 'global-code-toggle-container';
-
     document.body.appendChild(floatingContainer);
-
     buttonHost = floatingContainer;
-
   }
-
-
 
   const repoLink = toolsContainer ? toolsContainer.querySelector('a[href*="github.com"]') : null;
-
   if (repoLink) {
-
     repoLink.title = 'Repositorio';
-
     repoLink.setAttribute('aria-label', 'Repositorio');
-
   }
-
-
 
   const button = document.createElement('a');
-
   button.href = '#';
-
   button.className = 'quarto-navigation-tool px-1 global-code-toggle';
-
   button.setAttribute('role', 'button');
 
-
-
   if (!toolsContainer) {
-
     button.classList.add('global-code-toggle-floating');
-
   }
-
-
 
   const icon = document.createElement('i');
-
   icon.className = ICON_HIDE;
-
   button.appendChild(icon);
 
-
-
   const pdfLink = toolsContainer ? toolsContainer.querySelector('a[href$=".pdf"]') : null;
-
   if (pdfLink && buttonHost === toolsContainer) {
-
     buttonHost.insertBefore(button, pdfLink);
-
   } else {
-
     buttonHost.appendChild(button);
-
   }
 
-
-
   const pageHasCode = codeSelectors.some(function (selector) {
-
     return document.querySelector(selector);
-
   });
-
-
 
   let showingCode = true;
 
-
-
   const setIcon = function (iconClass) {
-
     icon.className = iconClass;
-
   };
-
-
 
   const disableButton = function () {
-
     button.classList.add('global-code-toggle-disabled');
-
     button.classList.add('disabled');
-
     button.setAttribute('aria-disabled', 'true');
-
     button.setAttribute('aria-pressed', 'false');
-
     button.setAttribute('aria-label', LABEL_EMPTY);
-
     button.title = LABEL_EMPTY;
-
     button.tabIndex = -1;
-
     setIcon(ICON_SHOW);
-
   };
-
-
 
   const enableButton = function () {
-
     button.classList.remove('global-code-toggle-disabled');
-
     button.classList.remove('disabled');
-
     button.removeAttribute('aria-disabled');
-
     button.tabIndex = 0;
-
   };
 
-
-
   const update = function () {
-
     if (!pageHasCode) {
-
       disableButton();
-
       document.body.classList.remove('global-code-hidden');
-
       return;
-
     }
-
-
 
     enableButton();
 
-
-
     if (showingCode) {
-
       document.body.classList.remove('global-code-hidden');
-
       button.setAttribute('aria-pressed', 'false');
-
       button.setAttribute('aria-label', LABEL_HIDE);
-
       button.title = LABEL_HIDE;
-
       setIcon(ICON_HIDE);
-
     } else {
-
       document.body.classList.add('global-code-hidden');
-
       button.setAttribute('aria-pressed', 'true');
-
       button.setAttribute('aria-label', LABEL_SHOW);
-
       button.title = LABEL_SHOW;
-
       setIcon(ICON_SHOW);
-
     }
-
   };
-
-
 
   button.addEventListener('click', function (event) {
-
     event.preventDefault();
 
-
-
     if (!pageHasCode) {
-
       return;
-
     }
-
-
 
     showingCode = !showingCode;
-
     update();
-
   });
-
-
 
   button.addEventListener('keydown', function (event) {
-
     if (event.key === ' ' || event.key === 'Spacebar') {
-
       event.preventDefault();
-
       button.click();
-
     }
-
   });
-
-
 
   update();
-
 });
-
 </script>
-
 <style>
-
 body.global-code-hidden .cell > .code-copy-outer-scaffold,
-
 body.global-code-hidden .cell > .sourceCode,
-
 body.global-code-hidden pre.sourceCode,
-
 body.global-code-hidden div.sourceCode {
-
   display: none;
-
 }
-
-
 
 .global-code-toggle {
-
   text-decoration: none;
-
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
-
   cursor: pointer;
-
 }
-
-
 
 .global-code-toggle i {
-
   font-size: 1.05rem;
-
 }
-
-
 
 .global-code-toggle-disabled {
-
   opacity: 0.6;
-
   cursor: default;
-
   pointer-events: none;
-
 }
-
-
 
 .global-code-toggle-container {
-
   position: fixed;
-
   right: 1.5rem;
-
   bottom: 1.5rem;
-
   z-index: 1030;
-
 }
-
-
 
 .global-code-toggle-floating {
-
   background-color: var(--bs-body-bg, #ffffff);
-
   border-radius: 0.375rem;
-
   padding: 0.4rem 0.55rem;
-
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.2);
-
 }
-
-
 
 .global-code-toggle-floating i {
-
   font-size: 1.15rem;
-
 }
-
-
 
 @media (max-width: 768px) {
-
   .global-code-toggle-container {
-
     right: 1rem;
-
     bottom: 1rem;
-
   }
-
 }
-
 </style>
-
 <script>
-
 document.addEventListener("DOMContentLoaded", () => {
-
   const toc = document.querySelector("nav#TOC, nav.toc-active");
-
   if (!toc) {
-
     return;
-
   }
-
-
 
   const tocLinks = toc.querySelectorAll("a.nav-link[data-scroll-target]");
-
   if (!tocLinks.length) {
-
     return;
-
   }
 
-
-
   const sections = Array.from(tocLinks)
-
     .map((link) => {
-
       const target = document.querySelector(link.getAttribute("data-scroll-target"));
-
       return target ? { link, target, top: 0 } : null;
-
     })
-
     .filter(Boolean);
 
-
-
   const updateOffsets = () => {
-
     sections.forEach((section) => {
-
       section.top = section.target.getBoundingClientRect().top + window.scrollY;
-
     });
-
   };
-
-
 
   const activateLink = (targetLink) => {
-
     tocLinks.forEach((link) => link.classList.remove("active"));
-
     if (targetLink) {
-
       targetLink.classList.add("active");
-
     }
-
   };
-
-
 
   const OFFSET = 140;
-
   let ticking = false;
 
-
-
   const updateActiveSection = () => {
-
     const scrollPosition = window.scrollY + OFFSET;
-
     let current = sections[0];
 
-
-
     for (const section of sections) {
-
       if (section.top <= scrollPosition) {
-
         current = section;
-
       } else {
-
         break;
-
       }
-
     }
-
-
 
     activateLink(current ? current.link : null);
-
     ticking = false;
-
   };
-
-
 
   const onScroll = () => {
-
     if (!ticking) {
-
       window.requestAnimationFrame(updateActiveSection);
-
       ticking = true;
-
     }
-
   };
 
-
-
   updateOffsets();
-
   updateActiveSection();
 
-
-
   window.addEventListener("scroll", onScroll, { passive: true });
-
   window.addEventListener("resize", () => {
-
     updateOffsets();
-
     updateActiveSection();
-
   });
-
-
 
   window.addEventListener("hashchange", () => {
-
     const hash = window.location.hash;
-
     const match = sections.find((section) => section.link.getAttribute("data-scroll-target") === hash);
-
     if (match) {
-
       activateLink(match.link);
-
     }
-
   });
-
 });
-
 </script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -2197,8 +1521,35 @@ document.addEventListener("DOMContentLoaded", () => {
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Introducción"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">numbered:</span><span class="co"> true</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Motivación, preguntas de investigación, Objetivo general y específicos, contribución esperada, estructura del documento.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introducción</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>En los últimos años, la inseguridad se ha convertido en una de las principales preocupaciones en el entorno nacional chileno. Esto, a pesar de que los estudios empíricos indiquen lo contrario en comparación con otros países ubicados en América Latina, donde las tasas de criminalidad y violencia son significativamente más altas. Esta contradicción se vuelve pertinente de analizar, pues como señala @ImpactoMediosComunicacion, "la ubicación de Chile bajo el promedio latinoamericano ha sido una constante desde mediados de los años noventa a la fecha" <span class="co">[</span><span class="ot">p. 6</span><span class="co">]</span>. De este modo, Chile pertenece objetivamente al grupo de los países más seguros de la región, llegando a ser considerado incluso el más seguro de América Latina.</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Sin embargo, la preocupación en la sociedad chilena en torno a la delincuencia y el temor a ser víctima de un delito se mantienen en niveles elevados, superando en ocasiones el promedio regional latinoamericano. De hecho, @ImpactoMediosComunicacion constata que, para el año 2007, "con 30,2% Chile supera por casi un 13% el promedio latinoamericano" <span class="co">[</span><span class="ot">p. 119</span><span class="co">]</span> en la percepción de la delincuencia como problema principal, una brecha que evidencia la profunda desconexión entre los indicadores objetivos de seguridad y la percepción ciudadana en Chile.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Esta desconexión ha sido abordada por diversas líneas de investigación. Por un lado, estudios como el de @ImpactoMediosComunicacion han demostrado que los medios de comunicación, y en particular el consumo frecuente de noticias, juegan un rol central en la construcción de la percepción de inseguridad en Chile, "considerando el paisaje mediático y sobre todo las características de los contenidos noticieros, los cuales tienden a sobre-representar el tema de la delincuencia" <span class="co">[</span><span class="ot">p. 184</span><span class="co">]</span>.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>@layeraInseguridadPercibidaBarrios2020 demostraron que la percepción que las personas tienen de su propia posición social influye más en su sensación de inseguridad que las condiciones objetivas del barrio. Según los autores, el estatus subjetivo "es una medida más sensitiva que el capital económico <span class="co">[</span><span class="ot">...</span><span class="co">]</span> que podría evaluar con mayor precisión la influencia acumulada de la posición social y vulnerabilidad" <span class="co">[</span><span class="ot">p. 9</span><span class="co">]</span>. Por lo que se vuelve pertinente analizar la clase social autopercibida y cómo podría considerarse un predictor clave al medir la percepción de la delincuencia.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>En este contexto, la presente investigación se propone explorar si la clase social subjetiva incide en la percepción de la delincuencia y, específicamente, si esta relación varía según el tipo de delito considerado. Se plantea que las personas que se autoposicionan en clases sociales más bajas tenderán a percibir con mayor intensidad los delitos vinculados a la violencia y el narcotráfico, mientras que aquellas ubicadas en clases sociales más altas tenderán a percibir con mayor fuerza la corrupción y el fraude.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Por lo que las preguntas que guiarán la investigación serán:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>¿Cómo se relaciona la autopercepción de clase social con la percepción de la delincuencia en Chile, y varía esta relación según el tipo de delito considerado?</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>¿Existe una diferencia significativa en la percepción de la delincuencia entre personas de clases sociales subjetivas bajas, medias y altas?</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>¿Existe una correlación negativa entre la clase social subjetiva y la percepción de la delincuencia, de modo que a mayor clase social, menor percepción de inseguridad?</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Con el principal objetivo de: Analizar la relación entre la clase social subjetiva y la percepción de la delincuencia en Chile, diferenciando el tipo de delito, a partir de los datos de la encuesta Latinobarómetro 2024 <span class="co">[</span><span class="ot">@Latinobarometro2024</span><span class="co">]</span>.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>La contribución esperada a nivel teórico es que este estudio contribuya a la literatura sobre la diferenciación social del miedo al delito en Chile, actualizando la evidencia con datos de Latinobarómetro 2024 y profundizando en la distinción entre tipos de delito. Esperando confirmar que la clase social subjetiva incide no solo en la intensidad del miedo, sino también en su dirección hacia ciertos fenómenos delictivos.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>En el nivel metodológico, el trabajo aplica prácticas de ciencia abierta tales como el uso de pre-registro, datos abiertos, y centrado en la posibilidad de reproducibilidad dentro del ámbito de las ciencias sociales.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Por último, a nivel práctico, los resultados podrán entregar herramientas para el diseño de políticas de seguridad y comunicación que consideren las percepciones diferenciadas por clase social, evitando enfoques homogéneos que no responden a la realidad de los distintos grupos.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>El presente trabajo se organizará de la siguiente manera: en la sección de antecedentes, se revisa la literatura sobre la relación entre clase social y percepción de inseguridad, con énfasis en el caso chileno y el rol de los medios de comunicación. Luego, en metodología, se detalla el uso de datos abiertos (Latinobarómetro 2024), el protocolo de investigación (estructura IPO), las variables consideradas y las prácticas de ciencia abierta (OSF, pre-registro, Quarto Book). Posteriormente, se presentan los resultados obtenidos del análisis estadístico, seguidos de su discusión a la luz de la literatura revisada. Finalmente, se exponen las conclusiones, las limitaciones del estudio y las proyecciones para futuras investigaciones, junto con la disponibilidad del Preprint y los materiales reproducibles.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

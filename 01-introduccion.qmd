@@ -2,29 +2,29 @@
 title: "Introducción"
 numbered: true
 ---
-En los últimos años, la inseguridad se ha convertido en una de las principales preocupaciones en el entorno nacional chileno. Esto, a pesar de que los estudios empíricos indiquen lo contrario en comparación con otros países ubicados en América Latina, donde las tasas de criminalidad y violencia son significativamente más altas. Esta contradicción se vuelve pertinente de analizar, pues como señala Klein (2010), "la ubicación de Chile bajo el promedio latinoamericano ha sido una constante desde mediados de los años noventa a la fecha" (p. 6). De este modo, Chile pertenece objetivamente al grupo de los países más seguros de la región, llegando a ser considerado incluso el más seguro de América Latina.
+# Introducción
 
-Sin embargo, la preocupación en la sociedad chilena en torno a la delincuencia y el temor a ser víctima de un delito se mantienen en niveles elevados, superando en ocasiones el promedio regional latinoamericano. De hecho, Klein (2010) constata que, para el año 2007, "con 30,2% Chile supera por casi un 13% el promedio latinoamericano" (p. 119) en la percepción de la delincuencia como problema principal, una brecha que evidencia la profunda desconexión entre los indicadores objetivos de seguridad y la percepción ciudadana en Chile
+En los últimos años, la inseguridad se ha convertido en una de las principales preocupaciones en el entorno nacional chileno. Esto, a pesar de que los estudios empíricos indiquen lo contrario en comparación con otros países ubicados en América Latina, donde las tasas de criminalidad y violencia son significativamente más altas. Esta contradicción se vuelve pertinente de analizar, pues como señala @ImpactoMediosComunicacion, "la ubicación de Chile bajo el promedio latinoamericano ha sido una constante desde mediados de los años noventa a la fecha" [p. 6]. De este modo, Chile pertenece objetivamente al grupo de los países más seguros de la región, llegando a ser considerado incluso el más seguro de América Latina.
 
-Esta desconexión ha sido abordada por diversas líneas de investigación. Por un lado, estudios como el de Klein (2010) han demostrado que los medios de comunicación, y en particular el consumo frecuente de noticias, juegan un rol central en la construcción de la percepción de inseguridad en Chile, “Considerando el paisaje mediático y sobre todo las características de los contenidos noticieros, los cuales tienden a sobre-representar el tema de la delincuencia” (p. 184).
+Sin embargo, la preocupación en la sociedad chilena en torno a la delincuencia y el temor a ser víctima de un delito se mantienen en niveles elevados, superando en ocasiones el promedio regional latinoamericano. De hecho, @ImpactoMediosComunicacion constata que, para el año 2007, "con 30,2% Chile supera por casi un 13% el promedio latinoamericano" [p. 119] en la percepción de la delincuencia como problema principal, una brecha que evidencia la profunda desconexión entre los indicadores objetivos de seguridad y la percepción ciudadana en Chile.
 
-Méndez Layera et al. (2020) demostraron que la percepción que las personas tienen de su propia posición social influye más en su sensación de inseguridad que las condiciones objetivas del barrio. Según los autores, el estatus subjetivo "es una medida más sensitiva que el capital económico [...] que podría evaluar con mayor precisión la influencia acumulada de la posición social y vulnerabilidad" (p. 9). Por lo que se vuelve pertinente analizar la clase social autopercibida y como podría considerarse un predictor clave al medir la percepción de la delincuencia.
+Esta desconexión ha sido abordada por diversas líneas de investigación. Por un lado, estudios como el de @ImpactoMediosComunicacion han demostrado que los medios de comunicación, y en particular el consumo frecuente de noticias, juegan un rol central en la construcción de la percepción de inseguridad en Chile, "considerando el paisaje mediático y sobre todo las características de los contenidos noticieros, los cuales tienden a sobre-representar el tema de la delincuencia" [p. 184].
+
+@layeraInseguridadPercibidaBarrios2020 demostraron que la percepción que las personas tienen de su propia posición social influye más en su sensación de inseguridad que las condiciones objetivas del barrio. Según los autores, el estatus subjetivo "es una medida más sensitiva que el capital económico [...] que podría evaluar con mayor precisión la influencia acumulada de la posición social y vulnerabilidad" [p. 9]. Por lo que se vuelve pertinente analizar la clase social autopercibida y cómo podría considerarse un predictor clave al medir la percepción de la delincuencia.
 
 En este contexto, la presente investigación se propone explorar si la clase social subjetiva incide en la percepción de la delincuencia y, específicamente, si esta relación varía según el tipo de delito considerado. Se plantea que las personas que se autoposicionan en clases sociales más bajas tenderán a percibir con mayor intensidad los delitos vinculados a la violencia y el narcotráfico, mientras que aquellas ubicadas en clases sociales más altas tenderán a percibir con mayor fuerza la corrupción y el fraude.
 
+Por lo que las preguntas que guiarán la investigación serán:
 
-Por lo que las preguntas que guiarán la investigación serán: 
+1.  ¿Cómo se relaciona la autopercepción de clase social con la percepción de la delincuencia en Chile, y varía esta relación según el tipo de delito considerado?
 
-¿Cómo se relaciona la autopercepción de clase social con la percepción de la delincuencia en Chile, y varía esta relación según el tipo de delito considerado? 
+2.  ¿Existe una diferencia significativa en la percepción de la delincuencia entre personas de clases sociales subjetivas bajas, medias y altas?
 
-¿Existe una diferencia significativa en la percepción de la delincuencia entre personas de clases sociales subjetivas bajas, medias y altas? 
+3.  ¿Existe una correlación negativa entre la clase social subjetiva y la percepción de la delincuencia, de modo que a mayor clase social, menor percepción de inseguridad?
 
+Con el principal objetivo de: Analizar la relación entre la clase social subjetiva y la percepción de la delincuencia en Chile, diferenciando el tipo de delito, a partir de los datos de la encuesta Latinobarómetro 2024 [@Latinobarometro2024].
 
-¿Existe una correlación negativa entre la clase social subjetiva y la percepción de la delincuencia, de modo que a mayor clase social, menor percepción de inseguridad?
-
-Con el principal objetivo de: Analizar la relación entre la clase social subjetiva y la percepción de la delincuencia en Chile, diferenciando el tipo de delito, a partir de los datos de la encuesta Latinobarómetro 2024.
-
-La contribución esperada a nivel teórico, es que este estudio contribuya a la literatura sobre la diferenciación social del miedo al delito en Chile, actualizando la evidencia con datos de Latinobarómetro 2024 y profundizando en la distinción entre tipos de delito. Esperando confirmar que la clase social subjetiva incide no solo en la intensidad del miedo, sino también en su dirección hacia ciertos fenómenos delictivos.
+La contribución esperada a nivel teórico es que este estudio contribuya a la literatura sobre la diferenciación social del miedo al delito en Chile, actualizando la evidencia con datos de Latinobarómetro 2024 y profundizando en la distinción entre tipos de delito. Esperando confirmar que la clase social subjetiva incide no solo en la intensidad del miedo, sino también en su dirección hacia ciertos fenómenos delictivos.
 
 En el nivel metodológico, el trabajo aplica prácticas de ciencia abierta tales como el uso de pre-registro, datos abiertos, y centrado en la posibilidad de reproducibilidad dentro del ámbito de las ciencias sociales.
 
