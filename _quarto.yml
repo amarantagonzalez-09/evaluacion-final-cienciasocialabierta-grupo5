@@ -8,7 +8,7 @@ project:
     - assets/favicon-2025-20251031.svg  # Asegura que el favicon versionado llegue a docs/
 
 book:
-  title: Título del trabajo
+  title: "Relación entre clase social subjetiva y percepción de delincuencia y corrupción en Chile"
   subtitle: Trabajo final
   output-file: reportes-facso-plantilla
   repo-url: https://github.com/amarantagonzalez-09/evaluacion-final-cienciasocialabierta-grupo5.git  
@@ -43,9 +43,6 @@ book:
     - 05-resultados.qmd
     - 06-conclusiones.qmd
     - references.qmd
-  appendices:
-    - apendices/A-encuestas.qmd
-    - apendices/B-tablas.qmd
     # Guarda anexos extensos en apendices/ y listalos aqui.
 
 csl: refs/apa.csl                # Estilo de citas (cambia a otro .csl si lo prefieres)

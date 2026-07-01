@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Relación entre clase social subjetiva y percepción de delincuencia y corrupción en Chile"
 number-sections: false
 numbered: false
 format:
@@ -20,7 +20,9 @@ format:
 nav#TOC { display: none !important; }
 div[data-when-format="pdf"] { display: none !important; }
 </style>
-<span class="keywords-line"><strong>Palabras clave:</strong> Ciencia Social Abierta</span>
+<span class="keywords-line"><strong>Palabras clave:</strong> Ciencia Social Abierta, Delincuencia, Corrupción, Clase Social Subjetiva</span>
 :::
 
 # Abstract {.unnumbered}
+El presente documento es un informe de investigación que aborda la clase social subjetiva y su relación con la percepción de la delincuencia y corrupción en Chile, utilizando datos de Latinobarómetro 2024. El estudio se constituye de 3 hipotesis principales: (1) la clase social subjetiva incide en la percepción de la delincuencia y corrupción, (2) esta relación varía según el tipo de delito considerado, y (3) existe una correlación negativa entre la clase social subjetiva y la percepción de inseguridad. La investigación se basa en un enfoque de ciencia social abierta, aplicando prácticas como pre-registro, datos abiertos y reproducibilidad. Los resultados obtenidos permiten comprender mejor cómo las percepciones de la corrupción se relacionan con la posición social autopercibida, ofreciendo información valiosa para el diseño de políticas públicas y estrategias de comunicación más efectivas.
+El preregistro de la investigación se encuentra disponible en el [Repositorio OSF.](https://www.doi.org/10.17605/OSF.IO/9R4AN)
