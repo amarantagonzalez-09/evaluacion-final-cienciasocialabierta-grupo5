@@ -2,7 +2,6 @@
 title: "Introducción"
 numbered: true
 ---
-# Introducción
 
 En los últimos años, la inseguridad se ha convertido en una de las principales preocupaciones en el entorno nacional chileno. Esto, a pesar de que los estudios empíricos indiquen lo contrario en comparación con otros países ubicados en América Latina, donde las tasas de criminalidad y violencia son significativamente más altas. Esta contradicción se vuelve pertinente de analizar, pues como señala @ImpactoMediosComunicacion, "la ubicación de Chile bajo el promedio latinoamericano ha sido una constante desde mediados de los años noventa a la fecha" [p. 6]. De este modo, Chile pertenece objetivamente al grupo de los países más seguros de la región, llegando a ser considerado incluso el más seguro de América Latina.
 

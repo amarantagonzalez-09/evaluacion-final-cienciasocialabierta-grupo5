@@ -1,7 +1,6 @@
 ---
 title: "Antecedentes"
 ---
-# Antecedentes
 
 El estudio de la percepción de inseguridad ha sido abordado desde diversas perspectivas que coinciden en señalar su autonomía relativa respecto de los indicadores objetivos de criminalidad. La tesis de @ImpactoMediosComunicacion constituye uno de los antecedentes más relevantes para esta investigación, ya que analiza el impacto de los medios de comunicación en la percepción de seguridad en Chile y América Latina utilizando datos de Latinobarómetro 2007.
 
