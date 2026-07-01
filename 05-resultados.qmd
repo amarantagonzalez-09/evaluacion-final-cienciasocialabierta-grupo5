@@ -57,7 +57,7 @@ Para la hipótesis direccional, donde se espera que las clases sociales subjetiv
 Los resultados del análisis ANOVA para la escala de percepción de la delincuencia común indican que no hay diferencias significativas entre los grupos de clase social subjetiva (F(2, 1190) = 0.697, p = 0.498). Por otro lado, los resultados del análisis ANOVA para la escala de percepción de la corrupción indican que existen diferencias significativas entre los grupos de clase social subjetiva y la percepción de la corrupción.
 Para verificar entre qué grupos existen diferencias significativas, se realizó la prueba post-hoc de Tukey. 
 
-<iframe src="output/tukey_anova_h2_cor_tabla.html" width="100%"  style="border:none;"></iframe>
+<iframe src="output/tukey_anova_h2_cor_tabla.html" id="miIframe" width="100%" style="border:none;" onload="this.style.height=this.contentWindow.document.body.scrollHeight+'px';"></iframe>
 
 Se encuentra que la clase baja puntúa 16.5 puntos más alto que la clase alta en la escala de percepción de la corrupción, la clase media puntúa 14.04 puntos más alto que la clase alta y la clase media puntúa 2.46 puntos más bajo que la clase baja. Estos resultados son significativos y sugieren que las clases sociales subjetivas bajas y medias perciben más corrupción que las clases sociales subjetivas altas.
 
