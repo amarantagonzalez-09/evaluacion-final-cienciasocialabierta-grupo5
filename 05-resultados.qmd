@@ -43,7 +43,7 @@ data <- readRDS("input/data-proc.rds")
 ## Hipotesis de diferencias
 Para la hipótesis de diferencias de medias, donde se espera que exista una diferencia entre los promedios de percepción de la delincuencia entre clases sociales subjetivas bajas, medias y altas, se realizó un análisis ANOVA para comparar las medias de la escala de percepción de la delincuencia común entre los diferentes grupos de clase social subjetiva. 
 
-{{< include output/anova_h1_tabla.html >}}
+<iframe src="output/anova_h1_tabla.html" width="100%" height="500px" style="border:none;"></iframe>
 
 Los resultados indican que la clase social subjetiva no tiene un efecto significativo en la percepción de la delincuencia común, ya que el valor p es mayor a 0.05 (F(2, 1190) = 0.697, p = 0.498). Esto sugiere que no hay diferencias significativas en la percepción de la delincuencia común entre los diferentes grupos de clase social subjetiva, en consecuencia se acepta la hipótesis nula. 
 
